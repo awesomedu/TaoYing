@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0439590F21E33AAF0013DFE0 /* TDNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439590E21E33AAF0013DFE0 /* TDNavView.m */; };
+		0439591321E33EA80013DFE0 /* MineContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439591121E33EA80013DFE0 /* MineContentCell.m */; };
+		0439591421E33EA80013DFE0 /* MineContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0439591221E33EA80013DFE0 /* MineContentCell.xib */; };
 		0491084D21E2E24F002B12A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491084C21E2E24F002B12A4 /* AppDelegate.m */; };
 		0491085021E2E24F002B12A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491084F21E2E24F002B12A4 /* ViewController.m */; };
 		0491085321E2E24F002B12A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0491085121E2E24F002B12A4 /* Main.storyboard */; };
@@ -15,10 +18,11 @@
 		0491085B21E2E250002B12A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491085A21E2E250002B12A4 /* main.m */; };
 		0491086521E2E251002B12A4 /* TaoYingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491086421E2E251002B12A4 /* TaoYingTests.m */; };
 		0491087021E2E251002B12A4 /* TaoYingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491086F21E2E251002B12A4 /* TaoYingUITests.m */; };
-		0491088021E2F5CF002B12A4 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491087F21E2F5CF002B12A4 /* RegisterViewController.m */; };
 		0491088321E30122002B12A4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491088221E30122002B12A4 /* BaseViewController.m */; };
-		0491088621E302E7002B12A4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491088521E302E7002B12A4 /* LoginViewController.m */; };
 		0491088921E32C4F002B12A4 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491088821E32C4F002B12A4 /* MainTabBarViewController.m */; };
+		0491089421E3318C002B12A4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491089021E3318C002B12A4 /* LoginViewController.m */; };
+		0491089521E3318C002B12A4 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491089121E3318C002B12A4 /* RegisterViewController.m */; };
+		0491089821E331A6002B12A4 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491089721E331A6002B12A4 /* MineViewController.m */; };
 		7AF9543875EB7721AAFB1FCA /* libPods-TaoYing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 358CE531C9F55161585E1017 /* libPods-TaoYing.a */; };
 		E8715B57A8A84D013355BAD2 /* libPods-TaoYingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0542BA8394BD8D5F2BD885B2 /* libPods-TaoYingTests.a */; };
 		E964C58A1D1685BBC0C2DB96 /* libPods-TaoYingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A1CC08BA7AE9A761378CD5 /* libPods-TaoYingUITests.a */; };
@@ -42,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0439590D21E33AAF0013DFE0 /* TDNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDNavView.h; sourceTree = "<group>"; };
+		0439590E21E33AAF0013DFE0 /* TDNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDNavView.m; sourceTree = "<group>"; };
+		0439591021E33EA80013DFE0 /* MineContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineContentCell.h; sourceTree = "<group>"; };
+		0439591121E33EA80013DFE0 /* MineContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineContentCell.m; sourceTree = "<group>"; };
+		0439591221E33EA80013DFE0 /* MineContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineContentCell.xib; sourceTree = "<group>"; };
 		0491084821E2E24F002B12A4 /* TaoYing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaoYing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0491084B21E2E24F002B12A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0491084C21E2E24F002B12A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,14 +67,16 @@
 		0491086B21E2E251002B12A4 /* TaoYingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaoYingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0491086F21E2E251002B12A4 /* TaoYingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaoYingUITests.m; sourceTree = "<group>"; };
 		0491087121E2E251002B12A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0491087E21E2F5CF002B12A4 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
-		0491087F21E2F5CF002B12A4 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		0491088121E30122002B12A4 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		0491088221E30122002B12A4 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		0491088421E302E7002B12A4 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		0491088521E302E7002B12A4 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0491088721E32C4F002B12A4 /* MainTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		0491088821E32C4F002B12A4 /* MainTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		0491089021E3318C002B12A4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0491089121E3318C002B12A4 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		0491089221E3318C002B12A4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0491089321E3318C002B12A4 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		0491089621E331A6002B12A4 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		0491089721E331A6002B12A4 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		0542BA8394BD8D5F2BD885B2 /* libPods-TaoYingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaoYingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A1CC08BA7AE9A761378CD5 /* libPods-TaoYingUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaoYingUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EAAE89D7CDB23CA041F3018 /* Pods-TaoYingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoYingUITests.release.xcconfig"; path = "Target Support Files/Pods-TaoYingUITests/Pods-TaoYingUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +116,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0439590C21E33AAF0013DFE0 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				0439590D21E33AAF0013DFE0 /* TDNavView.h */,
+				0439590E21E33AAF0013DFE0 /* TDNavView.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		0491083F21E2E24F002B12A4 = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +150,11 @@
 		0491084A21E2E24F002B12A4 /* TaoYing */ = {
 			isa = PBXGroup;
 			children = (
+				0491088A21E3318C002B12A4 /* Classes */,
 				0491088121E30122002B12A4 /* BaseViewController.h */,
 				0491088221E30122002B12A4 /* BaseViewController.m */,
 				0491088721E32C4F002B12A4 /* MainTabBarViewController.h */,
 				0491088821E32C4F002B12A4 /* MainTabBarViewController.m */,
-				0491087D21E2F5C2002B12A4 /* Login */,
 				0491084B21E2E24F002B12A4 /* AppDelegate.h */,
 				0491084C21E2E24F002B12A4 /* AppDelegate.m */,
 				0491084E21E2E24F002B12A4 /* ViewController.h */,
@@ -166,13 +186,59 @@
 			path = TaoYingUITests;
 			sourceTree = "<group>";
 		};
-		0491087D21E2F5C2002B12A4 /* Login */ = {
+		0491088A21E3318C002B12A4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0491087E21E2F5CF002B12A4 /* RegisterViewController.h */,
-				0491087F21E2F5CF002B12A4 /* RegisterViewController.m */,
-				0491088421E302E7002B12A4 /* LoginViewController.h */,
-				0491088521E302E7002B12A4 /* LoginViewController.m */,
+				0439590C21E33AAF0013DFE0 /* Custom */,
+				0491088B21E3318C002B12A4 /* Mine */,
+				0491088F21E3318C002B12A4 /* Login */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0491088B21E3318C002B12A4 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				0491088C21E3318C002B12A4 /* Controller */,
+				0491088D21E3318C002B12A4 /* Model */,
+				0491088E21E3318C002B12A4 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		0491088C21E3318C002B12A4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0491089621E331A6002B12A4 /* MineViewController.h */,
+				0491089721E331A6002B12A4 /* MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0491088D21E3318C002B12A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0491088E21E3318C002B12A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0439591021E33EA80013DFE0 /* MineContentCell.h */,
+				0439591121E33EA80013DFE0 /* MineContentCell.m */,
+				0439591221E33EA80013DFE0 /* MineContentCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0491088F21E3318C002B12A4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0491089221E3318C002B12A4 /* LoginViewController.h */,
+				0491089021E3318C002B12A4 /* LoginViewController.m */,
+				0491089321E3318C002B12A4 /* RegisterViewController.h */,
+				0491089121E3318C002B12A4 /* RegisterViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -307,6 +373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0439591421E33EA80013DFE0 /* MineContentCell.xib in Resources */,
 				0491085821E2E250002B12A4 /* LaunchScreen.storyboard in Resources */,
 				0491085521E2E250002B12A4 /* Assets.xcassets in Resources */,
 				0491085321E2E24F002B12A4 /* Main.storyboard in Resources */,
@@ -428,12 +495,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0491088921E32C4F002B12A4 /* MainTabBarViewController.m in Sources */,
+				0439590F21E33AAF0013DFE0 /* TDNavView.m in Sources */,
 				0491085021E2E24F002B12A4 /* ViewController.m in Sources */,
+				0491089421E3318C002B12A4 /* LoginViewController.m in Sources */,
+				0439591321E33EA80013DFE0 /* MineContentCell.m in Sources */,
 				0491088321E30122002B12A4 /* BaseViewController.m in Sources */,
-				0491088621E302E7002B12A4 /* LoginViewController.m in Sources */,
+				0491089521E3318C002B12A4 /* RegisterViewController.m in Sources */,
 				0491085B21E2E250002B12A4 /* main.m in Sources */,
 				0491084D21E2E24F002B12A4 /* AppDelegate.m in Sources */,
-				0491088021E2F5CF002B12A4 /* RegisterViewController.m in Sources */,
+				0491089821E331A6002B12A4 /* MineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
