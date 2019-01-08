@@ -57,6 +57,11 @@
 - (void)setUpUI{
     _backView = [UIView new];
     _backView.backgroundColor = [UIColor whiteColor];
+    _backView.layer.shadowColor=[UIColor blackColor].CGColor;
+    _backView.layer.shadowOffset=CGSizeMake(10, 10);
+    _backView.layer.shadowOpacity=0.5;
+    _backView.layer.shadowRadius=5;
+
     [self addSubview:_backView];
 //
     _goodsImageView = [[UIImageView alloc] init];
@@ -98,6 +103,16 @@
     _dividenLabel.textAlignment = NSTextAlignmentCenter;
     _dividenLabel.backgroundColor = [UIColor gt_colorWithHexString:@"#cc3399"];
     [_backView addSubview:_dividenLabel];
+    
+    UIView *shadowView = [[UIView alloc] initWithFrame:CGRectMake(50, 100, 300, 200)];//这里的大小将不影响fangkuanView1 的显示（即这里只起 设置frame.origin的作用）
+    //阴影设置
+    shadowView.layer.shadowColor = [UIColor blackColor].CGColor;
+    shadowView.layer.shadowOffset = CGSizeMake(4, 4);
+    shadowView.layer.shadowOpacity = 0.5;
+    shadowView.layer.shadowRadius = 4.0;
+    shadowView.layer.cornerRadius = 10.0;
+    
+    
 }
 
 - (void)layoutSubviews{
@@ -105,7 +120,8 @@
     __weak __typeof(self) weakSelf = self;
 
     [_backView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.bottom.mas_equalTo(self);
+        make.top.mas_equalTo(self).offset(5);
+        make.bottom.mas_equalTo(self).offset(-10);
         make.left.mas_equalTo(self).offset(15);
         make.right.mas_equalTo(self).offset(0);
     }];
@@ -148,13 +164,21 @@
         make.centerY.mas_equalTo(weakSelf.itemNameLabel);
         make.right.mas_equalTo(weakSelf).offset(3);
         make.width.mas_equalTo(55);
+        make.height.mas_equalTo(20);
     }];
 
+    [self setPartRoundWithView:_earnImageView corners:UIRectCornerBottomRight cornerRadius:10];
+    
     _dividenLabel.layer.masksToBounds = YES;
     _dividenLabel.layer.cornerRadius = 5;
-    
-//    _backView.layer.masksToBounds = YES;
+
     _backView.layer.cornerRadius = 10;
+}
+
+- (void)setPartRoundWithView:(UIView *)view corners:(UIRectCorner)corners cornerRadius:(float)cornerRadius {
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.path = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(cornerRadius, cornerRadius)].CGPath;
+    view.layer.mask = shapeLayer;
 }
 
 #pragma mark - Setter Getter Methods

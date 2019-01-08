@@ -11,6 +11,26 @@
 
 @implementation LoginViewController
 
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    [self configureUI];
+}
+
+- (void)configureUI{
+    NSArray *fieldArr = @[
+                          _loginField,
+                          _pwdField
+                          ];
+    [fieldArr enumerateObjectsUsingBlock:^(UITextField *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 60, 0)] ;
+        obj.leftView.userInteractionEnabled = NO;
+        obj.leftViewMode = UITextFieldViewModeAlways;
+        // Text 垂直居中
+        obj.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    }];
+    
+}
+
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:animated];

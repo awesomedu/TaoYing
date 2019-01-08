@@ -127,6 +127,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="L7V-1E-S88"/>
+                    <connections>
+                        <outlet property="loginField" destination="eKm-xg-ClO" id="At4-mY-Ad0"/>
+                        <outlet property="pwdField" destination="qSO-NN-nXj" id="ftS-NS-ikr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -545,16 +549,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TAOYING" width="306" height="46"/>
-        <image name="box-1" width="276" height="40"/>
-        <image name="box-2" width="276" height="40"/>
+        <image name="TAOYING" width="306" height="46.5"/>
+        <image name="box-1" width="276.5" height="40"/>
+        <image name="box-2" width="276.5" height="40"/>
         <image name="icon-home" width="14" height="15"/>
         <image name="icon-market" width="14" height="15"/>
-        <image name="icon-me" width="12" height="14"/>
-        <image name="icon-shejiao" width="15" height="15"/>
+        <image name="icon-me" width="12.5" height="14.5"/>
+        <image name="icon-shejiao" width="15.5" height="15.5"/>
         <image name="icon-shiping" width="15" height="15"/>
         <image name="loginBack" width="250" height="445"/>
-        <image name="logo" width="113" height="114"/>
-        <image name="yes" width="7" height="5"/>
+        <image name="logo" width="113.5" height="114"/>
+        <image name="yes" width="7.5" height="5"/>
     </resources>
 </document>

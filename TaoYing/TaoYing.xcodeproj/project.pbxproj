@@ -32,6 +32,9 @@
 		04E1BE1521E4728D0001139C /* HomeRecommendItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE1421E4728D0001139C /* HomeRecommendItem.m */; };
 		04E1BE1821E474180001139C /* RecommendInnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE1721E474180001139C /* RecommendInnerCell.m */; };
 		04E1BE1A21E47F040001139C /* Recommend.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04E1BE1921E47F040001139C /* Recommend.plist */; };
+		3CB0B1DE21E4C3C2009C8E74 /* MovieDevoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0B1DD21E4C3C2009C8E74 /* MovieDevoteCell.m */; };
+		3CB0B1E121E4C80A009C8E74 /* HomeMovieDevoteItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0B1E021E4C80A009C8E74 /* HomeMovieDevoteItem.m */; };
+		3CB0B1E321E4C8D7009C8E74 /* MovieDevote.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CB0B1E221E4C8D7009C8E74 /* MovieDevote.plist */; };
 		7AF9543875EB7721AAFB1FCA /* libPods-TaoYing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 358CE531C9F55161585E1017 /* libPods-TaoYing.a */; };
 		E8715B57A8A84D013355BAD2 /* libPods-TaoYingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0542BA8394BD8D5F2BD885B2 /* libPods-TaoYingTests.a */; };
 		E964C58A1D1685BBC0C2DB96 /* libPods-TaoYingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A1CC08BA7AE9A761378CD5 /* libPods-TaoYingUITests.a */; };
@@ -107,6 +110,11 @@
 		2EAAE89D7CDB23CA041F3018 /* Pods-TaoYingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoYingUITests.release.xcconfig"; path = "Target Support Files/Pods-TaoYingUITests/Pods-TaoYingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		309072D2C9E03909549DBE9B /* Pods-TaoYingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoYingTests.debug.xcconfig"; path = "Target Support Files/Pods-TaoYingTests/Pods-TaoYingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		358CE531C9F55161585E1017 /* libPods-TaoYing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaoYing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB0B1DC21E4C3C2009C8E74 /* MovieDevoteCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDevoteCell.h; sourceTree = "<group>"; };
+		3CB0B1DD21E4C3C2009C8E74 /* MovieDevoteCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDevoteCell.m; sourceTree = "<group>"; };
+		3CB0B1DF21E4C80A009C8E74 /* HomeMovieDevoteItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeMovieDevoteItem.h; sourceTree = "<group>"; };
+		3CB0B1E021E4C80A009C8E74 /* HomeMovieDevoteItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeMovieDevoteItem.m; sourceTree = "<group>"; };
+		3CB0B1E221E4C8D7009C8E74 /* MovieDevote.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MovieDevote.plist; sourceTree = "<group>"; };
 		6DFBDC26E2544370B07DE3BC /* Pods-TaoYingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoYingTests.release.xcconfig"; path = "Target Support Files/Pods-TaoYingTests/Pods-TaoYingTests.release.xcconfig"; sourceTree = "<group>"; };
 		759911A9D577649419B33EEC /* Pods-TaoYingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoYingUITests.debug.xcconfig"; path = "Target Support Files/Pods-TaoYingUITests/Pods-TaoYingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4609BBE77FCB5221782525E /* Pods-TaoYing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoYing.debug.xcconfig"; path = "Target Support Files/Pods-TaoYing/Pods-TaoYing.debug.xcconfig"; sourceTree = "<group>"; };
@@ -296,6 +304,8 @@
 				04E1BE0E21E449FE0001139C /* HomeZoneTopItem.m */,
 				04E1BE1321E4728D0001139C /* HomeRecommendItem.h */,
 				04E1BE1421E4728D0001139C /* HomeRecommendItem.m */,
+				3CB0B1DF21E4C80A009C8E74 /* HomeMovieDevoteItem.h */,
+				3CB0B1E021E4C80A009C8E74 /* HomeMovieDevoteItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,6 +321,8 @@
 				04E1BE1121E472240001139C /* HomeRecomendCollectionViewCell.m */,
 				04E1BE1621E474180001139C /* RecommendInnerCell.h */,
 				04E1BE1721E474180001139C /* RecommendInnerCell.m */,
+				3CB0B1DC21E4C3C2009C8E74 /* MovieDevoteCell.h */,
+				3CB0B1DD21E4C3C2009C8E74 /* MovieDevoteCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,6 +330,7 @@
 		04E1BE0A21E4483C0001139C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3CB0B1E221E4C8D7009C8E74 /* MovieDevote.plist */,
 				04E1BE1921E47F040001139C /* Recommend.plist */,
 				04E1BE0B21E448530001139C /* HomeMovie.plist */,
 			);
@@ -457,6 +470,7 @@
 				0439591421E33EA80013DFE0 /* MineContentCell.xib in Resources */,
 				04E1BE0C21E448530001139C /* HomeMovie.plist in Resources */,
 				0491085821E2E250002B12A4 /* LaunchScreen.storyboard in Resources */,
+				3CB0B1E321E4C8D7009C8E74 /* MovieDevote.plist in Resources */,
 				0491085521E2E250002B12A4 /* Assets.xcassets in Resources */,
 				0491085321E2E24F002B12A4 /* Main.storyboard in Resources */,
 				04E1BE1A21E47F040001139C /* Recommend.plist in Resources */,
@@ -584,12 +598,14 @@
 				04E1BE1821E474180001139C /* RecommendInnerCell.m in Sources */,
 				0491089421E3318C002B12A4 /* LoginViewController.m in Sources */,
 				0439591321E33EA80013DFE0 /* MineContentCell.m in Sources */,
+				3CB0B1DE21E4C3C2009C8E74 /* MovieDevoteCell.m in Sources */,
 				0491088321E30122002B12A4 /* BaseViewController.m in Sources */,
 				04E1BE0621E431A80001139C /* HomeBannerView.m in Sources */,
 				0491089521E3318C002B12A4 /* RegisterViewController.m in Sources */,
 				0491085B21E2E250002B12A4 /* main.m in Sources */,
 				04E1BE0F21E449FE0001139C /* HomeZoneTopItem.m in Sources */,
 				04E1BE0921E447B30001139C /* MovieTopCollectionViewCell.m in Sources */,
+				3CB0B1E121E4C80A009C8E74 /* HomeMovieDevoteItem.m in Sources */,
 				0491084D21E2E24F002B12A4 /* AppDelegate.m in Sources */,
 				04E1BE1221E472240001139C /* HomeRecomendCollectionViewCell.m in Sources */,
 				0491089821E331A6002B12A4 /* MineViewController.m in Sources */,

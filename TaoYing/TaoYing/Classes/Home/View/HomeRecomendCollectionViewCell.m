@@ -30,7 +30,7 @@ static NSString *const RecommendInnerCellID = @"RecommendInnerCell";
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
 //        layout.minimumLineSpacing = 1;
-        layout.itemSize = CGSizeMake(kWidth, kWidth *0.4);
+        layout.itemSize = CGSizeMake(kWidth *0.8, kWidth *0.4);
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal; //滚动方向
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
         [self addSubview:_collectionView];

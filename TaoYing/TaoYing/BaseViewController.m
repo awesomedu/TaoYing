@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNavBack];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"img"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"nav"] forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)setNavBack{
