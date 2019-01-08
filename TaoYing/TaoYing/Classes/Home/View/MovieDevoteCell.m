@@ -79,6 +79,7 @@
     _promiseLabel.textColor = [UIColor gt_colorWithHexString:@"#cc3399"];
     _promiseLabel.textAlignment = NSTextAlignmentCenter;
     _promiseLabel.text = @"承诺上映";
+   
     
     [self addSubview:_promiseLabel];
     
@@ -145,14 +146,14 @@
     [_promiseLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(weakSelf.openPriceLabel);
         make.top.mas_equalTo(weakSelf.openPriceLabel.mas_bottom).offset(10);
-        make.width.mas_equalTo(60);
+        make.width.mas_equalTo(55);
         make.height.mas_equalTo(20);
     }];
     
     [_protectLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(weakSelf.promiseLabel);
         make.left.mas_equalTo(weakSelf.promiseLabel.mas_right).offset(10);
-        make.width.mas_equalTo(60);
+        make.width.mas_equalTo(55);
         make.height.mas_equalTo(20);
     }];
     
@@ -169,19 +170,21 @@
         make.right.mas_equalTo(weakSelf.mas_right).offset(-10);
         make.height.mas_equalTo(6);
     }];
-//    _testProgressView.backgroundColor = [UIColor brownColor];
-//    [_testProgressView mas_makeConstraints:^(MASConstraintMaker *make) {
-//                make.bottom.mas_equalTo(weakSelf.imageView).offset(-10);
-//                make.left.mas_equalTo(weakSelf.promiseLabel);
-//                make.right.mas_equalTo(weakSelf.mas_right).offset(-10);
-//                make.height.mas_equalTo(10);
-//    }];
+    //    _testProgressView.backgroundColor = [UIColor brownColor];
+    //    [_testProgressView mas_makeConstraints:^(MASConstraintMaker *make) {
+    //                make.bottom.mas_equalTo(weakSelf.imageView).offset(-10);
+    //                make.left.mas_equalTo(weakSelf.promiseLabel);
+    //                make.right.mas_equalTo(weakSelf.mas_right).offset(-10);
+    //                make.height.mas_equalTo(10);
+    //    }];
     
     
     _promiseLabel.layer.masksToBounds = YES;
     _promiseLabel.layer.cornerRadius = 4;
     _promiseLabel.layer.borderWidth = 1;
     _promiseLabel.layer.borderColor = [UIColor gt_colorWithHexString:@"#cc3399"].CGColor;
+    
+    
     
     _protectLabel.layer.masksToBounds = YES;
     _protectLabel.layer.cornerRadius = 4;

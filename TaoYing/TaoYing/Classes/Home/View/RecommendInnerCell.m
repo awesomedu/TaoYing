@@ -57,7 +57,7 @@
 - (void)setUpUI{
     _backView = [UIView new];
     _backView.backgroundColor = [UIColor whiteColor];
-    _backView.layer.shadowColor=[UIColor blackColor].CGColor;
+    _backView.layer.shadowColor=[UIColor lightGrayColor].CGColor;
     _backView.layer.shadowOffset=CGSizeMake(10, 10);
     _backView.layer.shadowOpacity=0.5;
     _backView.layer.shadowRadius=5;
@@ -111,8 +111,6 @@
     shadowView.layer.shadowOpacity = 0.5;
     shadowView.layer.shadowRadius = 4.0;
     shadowView.layer.cornerRadius = 10.0;
-    
-    
 }
 
 - (void)layoutSubviews{
@@ -142,7 +140,7 @@
 
     [_itemNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(weakSelf.goodsImageView.mas_right).offset(10);
-        make.top.mas_equalTo(weakSelf.goodsImageView);
+        make.top.mas_equalTo(weakSelf.goodsImageView).offset(10);
     }];
 
     [_itemStyleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -157,7 +155,7 @@
 
     [_itemPayBackRateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(weakSelf.itemCostLabel);
-        make.bottom.mas_equalTo(weakSelf.goodsImageView);
+        make.bottom.mas_equalTo(weakSelf.goodsImageView).offset(-10);
     }];
 
     [_dividenLabel mas_makeConstraints:^(MASConstraintMaker *make) {

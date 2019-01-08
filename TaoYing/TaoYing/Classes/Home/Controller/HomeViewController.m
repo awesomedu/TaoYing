@@ -23,6 +23,10 @@
 
 
 @interface HomeViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+{
+    BOOL _isClick;
+}
+
 @property (nonatomic, strong) UICollectionView *collectionView;
 /// zone 5栏目
 @property (strong , nonatomic)NSMutableArray<HomeZoneTopItem *> *zoneItem;
@@ -68,7 +72,7 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
         _collectionView.dataSource = self;
         _collectionView.frame = CGRectMake(0, 0, kWidth, kHeight - 64);
         _collectionView.showsVerticalScrollIndicator = NO;
-        //注册
+        //注册 头部
         [_collectionView registerClass:[HomeBannerView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HomeBannerViewID];
         [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"systemReuse"];
         
@@ -90,24 +94,41 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
     [self setUpData];
     [self setUpBase];
     [self.view addSubview:_collectionView];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.backgroundColor = [UIColor redColor];
+    btn.frame = CGRectMake(100, 100, 100, 100);
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)btnClick{
+    _isClick = !_isClick;
+    [self.collectionView reloadData];
 }
 
 - (void)setUpData{
     _zoneItem = [HomeZoneTopItem mj_objectArrayWithFilename:@"HomeMovie.plist"];
     _devoteItem = [HomeMovieDevoteItem mj_objectArrayWithFilename:@"MovieDevote.plist"];
-    
+    _recommendItem = [HomeRecommendItem mj_objectArrayWithFilename:@"Recommend.plist"];
 }
 
 #pragma mark - initialize
 - (void)setUpBase
 {
+    if (@available(iOS 11.0, *)) {
+        self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
     self.collectionView.backgroundColor = [UIColor gt_colorWithHexString:@"#f8f8f8"];
 }
 
 
 #pragma mark - <UICollectionViewDataSource>
 - (NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 6;
+    return 3;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -130,6 +151,9 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
         return cell;
     }else if (indexPath.section == 1){
         HomeRecomendCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HomeRecomendCollectionViewCellID forIndexPath:indexPath];
+        NSLog(@"parentRecItem = %@",_recommendItem);
+     
+        cell.items = _recommendItem;
         return cell;
     }else if (indexPath.section == 2){
         MovieDevoteCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MovieDevoteCellID forIndexPath:indexPath];
@@ -146,7 +170,10 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
     if (kind == UICollectionElementKindSectionHeader){
         if (indexPath.section == 0) {
             HomeBannerView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HomeBannerViewID forIndexPath:indexPath];
+            headerView = nil;
+            headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HomeBannerViewID forIndexPath:indexPath];
             headerView.imageArr = SilderImagesArray;
+            
             reusableview = headerView;
         }
         
@@ -166,7 +193,13 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
     if (section == 0) {
-        return CGSizeMake(kWidth, 230); //图片滚动的宽高
+//        [collectionView layoutIfNeeded];
+        if (!_isClick) {
+            return CGSizeMake(kWidth, 230); //图片滚动的宽高
+        }else{
+            return CGSizeMake(kWidth, 300); //图片滚动的宽高
+        }
+        
     }else if (section == 2){
         return CGSizeMake(kWidth, 35);
     }
