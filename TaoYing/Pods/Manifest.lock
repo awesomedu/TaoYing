@@ -129,15 +129,21 @@ PODS:
     - MJRefresh
     - SDWebImage (~> 4.0.0)
   - IQKeyboardManager (3.3.7)
+  - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.7)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - GTCommonKit (~> 0.5.19)
+  - Masonry (~> 1.1.0)
+  - MJExtension (~> 3.0.15.1)
+  - SDCycleScrollView (~> 1.75)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -146,9 +152,11 @@ SPEC REPOS:
     - FMDB
     - GTCommonKit
     - IQKeyboardManager
+    - Masonry
     - MBProgressHUD
     - MJExtension
     - MJRefresh
+    - SDCycleScrollView
     - SDWebImage
 
 SPEC CHECKSUMS:
@@ -157,11 +165,13 @@ SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GTCommonKit: 72be8d46e1a378e3b9dedac870f8ba64a9ab76a8
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: c9459b64bd0217d790ed8f2c9cad45dc5137272d
+PODFILE CHECKSUM: 8ea5893dabe040ceaab9f15f2454c318393e5a90
 
 COCOAPODS: 1.6.0.beta.2

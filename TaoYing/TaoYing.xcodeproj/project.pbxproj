@@ -23,6 +23,11 @@
 		0491089421E3318C002B12A4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491089021E3318C002B12A4 /* LoginViewController.m */; };
 		0491089521E3318C002B12A4 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491089121E3318C002B12A4 /* RegisterViewController.m */; };
 		0491089821E331A6002B12A4 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491089721E331A6002B12A4 /* MineViewController.m */; };
+		04E1BE0321E42DE30001139C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE0221E42DE30001139C /* HomeViewController.m */; };
+		04E1BE0621E431A80001139C /* HomeBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE0521E431A80001139C /* HomeBannerView.m */; };
+		04E1BE0921E447B30001139C /* MovieTopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE0821E447B30001139C /* MovieTopCollectionViewCell.m */; };
+		04E1BE0C21E448530001139C /* HomeMovie.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04E1BE0B21E448530001139C /* HomeMovie.plist */; };
+		04E1BE0F21E449FE0001139C /* HomeZoneTopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE0E21E449FE0001139C /* HomeZoneTopItem.m */; };
 		7AF9543875EB7721AAFB1FCA /* libPods-TaoYing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 358CE531C9F55161585E1017 /* libPods-TaoYing.a */; };
 		E8715B57A8A84D013355BAD2 /* libPods-TaoYingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0542BA8394BD8D5F2BD885B2 /* libPods-TaoYingTests.a */; };
 		E964C58A1D1685BBC0C2DB96 /* libPods-TaoYingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A1CC08BA7AE9A761378CD5 /* libPods-TaoYingUITests.a */; };
@@ -77,6 +82,15 @@
 		0491089321E3318C002B12A4 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		0491089621E331A6002B12A4 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		0491089721E331A6002B12A4 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		04E1BE0121E42DE30001139C /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		04E1BE0221E42DE30001139C /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		04E1BE0421E431A80001139C /* HomeBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeBannerView.h; sourceTree = "<group>"; };
+		04E1BE0521E431A80001139C /* HomeBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeBannerView.m; sourceTree = "<group>"; };
+		04E1BE0721E447B30001139C /* MovieTopCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieTopCollectionViewCell.h; sourceTree = "<group>"; };
+		04E1BE0821E447B30001139C /* MovieTopCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieTopCollectionViewCell.m; sourceTree = "<group>"; };
+		04E1BE0B21E448530001139C /* HomeMovie.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HomeMovie.plist; sourceTree = "<group>"; };
+		04E1BE0D21E449FE0001139C /* HomeZoneTopItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeZoneTopItem.h; sourceTree = "<group>"; };
+		04E1BE0E21E449FE0001139C /* HomeZoneTopItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeZoneTopItem.m; sourceTree = "<group>"; };
 		0542BA8394BD8D5F2BD885B2 /* libPods-TaoYingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaoYingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A1CC08BA7AE9A761378CD5 /* libPods-TaoYingUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaoYingUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EAAE89D7CDB23CA041F3018 /* Pods-TaoYingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoYingUITests.release.xcconfig"; path = "Target Support Files/Pods-TaoYingUITests/Pods-TaoYingUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +164,7 @@
 		0491084A21E2E24F002B12A4 /* TaoYing */ = {
 			isa = PBXGroup;
 			children = (
+				04E1BE0A21E4483C0001139C /* Resource */,
 				0491088A21E3318C002B12A4 /* Classes */,
 				0491088121E30122002B12A4 /* BaseViewController.h */,
 				0491088221E30122002B12A4 /* BaseViewController.m */,
@@ -189,6 +204,7 @@
 		0491088A21E3318C002B12A4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04E1BDFA21E42B460001139C /* Home */,
 				0439590C21E33AAF0013DFE0 /* Custom */,
 				0491088B21E3318C002B12A4 /* Mine */,
 				0491088F21E3318C002B12A4 /* Login */,
@@ -241,6 +257,53 @@
 				0491089121E3318C002B12A4 /* RegisterViewController.m */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		04E1BDFA21E42B460001139C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04E1BDFB21E42B460001139C /* Controller */,
+				04E1BDFC21E42B460001139C /* Model */,
+				04E1BDFD21E42B460001139C /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		04E1BDFB21E42B460001139C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04E1BE0121E42DE30001139C /* HomeViewController.h */,
+				04E1BE0221E42DE30001139C /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04E1BDFC21E42B460001139C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04E1BE0D21E449FE0001139C /* HomeZoneTopItem.h */,
+				04E1BE0E21E449FE0001139C /* HomeZoneTopItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E1BDFD21E42B460001139C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04E1BE0421E431A80001139C /* HomeBannerView.h */,
+				04E1BE0521E431A80001139C /* HomeBannerView.m */,
+				04E1BE0721E447B30001139C /* MovieTopCollectionViewCell.h */,
+				04E1BE0821E447B30001139C /* MovieTopCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04E1BE0A21E4483C0001139C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				04E1BE0B21E448530001139C /* HomeMovie.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		2A0A0EA30ADA8A261AB2B0BA /* Frameworks */ = {
@@ -374,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0439591421E33EA80013DFE0 /* MineContentCell.xib in Resources */,
+				04E1BE0C21E448530001139C /* HomeMovie.plist in Resources */,
 				0491085821E2E250002B12A4 /* LaunchScreen.storyboard in Resources */,
 				0491085521E2E250002B12A4 /* Assets.xcassets in Resources */,
 				0491085321E2E24F002B12A4 /* Main.storyboard in Resources */,
@@ -500,10 +564,14 @@
 				0491089421E3318C002B12A4 /* LoginViewController.m in Sources */,
 				0439591321E33EA80013DFE0 /* MineContentCell.m in Sources */,
 				0491088321E30122002B12A4 /* BaseViewController.m in Sources */,
+				04E1BE0621E431A80001139C /* HomeBannerView.m in Sources */,
 				0491089521E3318C002B12A4 /* RegisterViewController.m in Sources */,
 				0491085B21E2E250002B12A4 /* main.m in Sources */,
+				04E1BE0F21E449FE0001139C /* HomeZoneTopItem.m in Sources */,
+				04E1BE0921E447B30001139C /* MovieTopCollectionViewCell.m in Sources */,
 				0491084D21E2E24F002B12A4 /* AppDelegate.m in Sources */,
 				0491089821E331A6002B12A4 /* MineViewController.m in Sources */,
+				04E1BE0321E42DE30001139C /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
