@@ -12,6 +12,8 @@
 #import "MovieTopCollectionViewCell.h"
 #import "HomeZoneTopItem.h"
 #import <MJExtension.h>
+#import "HomeRecomendCollectionViewCell.h"
+#import "HomeRecommendItem.h"
 
 
 #define SilderImagesArray @[@"http://gfs5.gomein.net.cn/T1obZ_BmLT1RCvBVdK.jpg",@"http://gfs9.gomein.net.cn/T1C3J_B5LT1RCvBVdK.jpg",@"http://gfs5.gomein.net.cn/T1CwYjBCCT1RCvBVdK.jpg",@"http://gfs7.gomein.net.cn/T1u8V_B4ET1RCvBVdK.jpg",@"http://gfs7.gomein.net.cn/T1zODgB5CT1RCvBVdK.jpg"]
@@ -22,12 +24,18 @@
 @property (nonatomic, strong) UICollectionView *collectionView;
 /// zone 5栏目
 @property (strong , nonatomic)NSMutableArray<HomeZoneTopItem *> *zoneItem;
+/// 推荐电影
+@property (strong , nonatomic)NSMutableArray<HomeRecommendItem *> *recommendItem;
+
+
 
 @end
 
 /* banner */
 static NSString *const HomeBannerViewID = @"HomeBannerView";
 static NSString *const MovieTopCollectionViewCellID = @"MovieTopCollectionViewCell";
+static NSString *const HomeRecomendCollectionViewCellID = @"HomeRecomendCollectionViewCell";
+
 
 @implementation HomeViewController
 
@@ -57,6 +65,7 @@ static NSString *const MovieTopCollectionViewCellID = @"MovieTopCollectionViewCe
         //注册
         [_collectionView registerClass:[HomeBannerView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HomeBannerViewID];
         [_collectionView registerClass:[MovieTopCollectionViewCell class] forCellWithReuseIdentifier:@"MovieTopCollectionViewCell"];
+        [_collectionView registerClass:[HomeRecomendCollectionViewCell class] forCellWithReuseIdentifier:@"HomeRecomendCollectionViewCell"];
         [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
         
     }
@@ -66,6 +75,7 @@ static NSString *const MovieTopCollectionViewCellID = @"MovieTopCollectionViewCe
 #pragma mark - LifeCyle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor gt_colorWithHexString:@"#f8f8f8"];
     [self setUpData];
     [self setUpBase];
     [self.view addSubview:_collectionView];
@@ -73,12 +83,13 @@ static NSString *const MovieTopCollectionViewCellID = @"MovieTopCollectionViewCe
 
 - (void)setUpData{
     _zoneItem = [HomeZoneTopItem mj_objectArrayWithFilename:@"HomeMovie.plist"];
+    
 }
 
 #pragma mark - initialize
 - (void)setUpBase
 {
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+      self.collectionView.backgroundColor = [UIColor gt_colorWithHexString:@"#f8f8f8"];
 }
 
 
@@ -90,15 +101,21 @@ static NSString *const MovieTopCollectionViewCellID = @"MovieTopCollectionViewCe
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (section == 0) {
         return 5;
+    }else if (section == 1){
+        return 1;
     }
-    return 20;
+    return 10;
 }
 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         MovieTopCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MovieTopCollectionViewCellID forIndexPath:indexPath];
+        cell.backgroundColor = [UIColor gt_colorWithHexString:@"#f8f8f8"];
         cell.zoneItem = _zoneItem[indexPath.row];
+        return cell;
+    }else if (indexPath.section == 1){
+        HomeRecomendCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HomeRecomendCollectionViewCellID forIndexPath:indexPath];
         return cell;
     }
     UICollectionViewCell *gridcell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
@@ -128,30 +145,27 @@ static NSString *const MovieTopCollectionViewCellID = @"MovieTopCollectionViewCe
 #pragma mark - item宽高
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        return CGSizeMake(kWidth/6 , kWidth/6);
-    }else{
+        return CGSizeMake(kWidth/6 , kWidth/5);
+    }else if (indexPath.section == 1){
+        return CGSizeMake(kWidth , kWidth *0.4);
+    }
+    else{
         return CGSizeMake(kWidth / 4, kWidth / 4);
     }
 }
 
 #pragma mark - <UICollectionViewDelegateFlowLayout>
 
-//#pragma mark - X间距
+#pragma mark - X间距
 //- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-//    if (section == 0) {
-//        return 0;
-//    }else{
-//        return 0;
-//    }
+//    return  (section == 1) ? 10 : 0;
 //}
 //#pragma mark - Y间距
 //- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-//    if (section == 0) {
-//        return 0;
-//    }else{
-//        return 0;
-//    }
+//    return  (section == 1) ? 30 : 0;
 //}
+
+
 
 
 /*
