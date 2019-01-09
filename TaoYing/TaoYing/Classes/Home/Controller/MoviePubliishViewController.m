@@ -89,7 +89,7 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    self.collectionView.backgroundColor = [UIColor gt_colorWithHexString:@"#f8f8f8"];
+    self.collectionView.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)setUpData{
