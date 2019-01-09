@@ -23,6 +23,23 @@
 		0491089421E3318C002B12A4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491089021E3318C002B12A4 /* LoginViewController.m */; };
 		0491089521E3318C002B12A4 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491089121E3318C002B12A4 /* RegisterViewController.m */; };
 		0491089821E331A6002B12A4 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491089721E331A6002B12A4 /* MineViewController.m */; };
+		04BD512A21E57B0E00A6324A /* MoviePubliishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD512921E57B0E00A6324A /* MoviePubliishViewController.m */; };
+		04BD513021E5840B00A6324A /* MovieIntroduceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD512F21E5840B00A6324A /* MovieIntroduceItem.m */; };
+		04BD513221E5849300A6324A /* Introduce.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BD513121E5849300A6324A /* Introduce.plist */; };
+		04BD513521E59D5800A6324A /* MoviePublishCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD513421E59D5800A6324A /* MoviePublishCell.m */; };
+		04BD513821E5A3AC00A6324A /* MoviePublishCommonheaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD513721E5A3AC00A6324A /* MoviePublishCommonheaderView.m */; };
+		04BD513B21E5A7E000A6324A /* MoviePublishActorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD513A21E5A7E000A6324A /* MoviePublishActorCell.m */; };
+		04BD513D21E5BF7700A6324A /* MovieActor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BD513C21E5BF7700A6324A /* MovieActor.plist */; };
+		04BD514021E5BFD100A6324A /* MovieIntroduceActorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD513F21E5BFD100A6324A /* MovieIntroduceActorItem.m */; };
+		04BD514321E5C69900A6324A /* MoviePublishActorInnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD514221E5C69900A6324A /* MoviePublishActorInnerCell.m */; };
+		04BD514621E5D18900A6324A /* MoviePhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD514521E5D18900A6324A /* MoviePhotoCell.m */; };
+		04BD514921E5D19900A6324A /* MoviePhotoInnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD514821E5D19900A6324A /* MoviePhotoInnerCell.m */; };
+		04BD514C21E5D1C500A6324A /* MovieintroduceVideoPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD514B21E5D1C500A6324A /* MovieintroduceVideoPhotoItem.m */; };
+		04BD514E21E5D37800A6324A /* VideoPhoto.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BD514D21E5D37800A6324A /* VideoPhoto.plist */; };
+		04BD515121E5DDCD00A6324A /* MoviePublicCommentsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD515021E5DDCD00A6324A /* MoviePublicCommentsHeaderView.m */; };
+		04BD515421E5E11500A6324A /* MoviePublishCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD515321E5E11500A6324A /* MoviePublishCommentCell.m */; };
+		04BD515721E5E5F000A6324A /* MovieIntroduceCommentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD515621E5E5F000A6324A /* MovieIntroduceCommentItem.m */; };
+		04BD515921E5E67900A6324A /* Comments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BD515821E5E67800A6324A /* Comments.plist */; };
 		04E1BE0321E42DE30001139C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE0221E42DE30001139C /* HomeViewController.m */; };
 		04E1BE0621E431A80001139C /* HomeBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE0521E431A80001139C /* HomeBannerView.m */; };
 		04E1BE0921E447B30001139C /* MovieTopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE0821E447B30001139C /* MovieTopCollectionViewCell.m */; };
@@ -89,6 +106,36 @@
 		0491089321E3318C002B12A4 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		0491089621E331A6002B12A4 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		0491089721E331A6002B12A4 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		04BD512821E57B0E00A6324A /* MoviePubliishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviePubliishViewController.h; sourceTree = "<group>"; };
+		04BD512921E57B0E00A6324A /* MoviePubliishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePubliishViewController.m; sourceTree = "<group>"; };
+		04BD512E21E5840B00A6324A /* MovieIntroduceItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieIntroduceItem.h; sourceTree = "<group>"; };
+		04BD512F21E5840B00A6324A /* MovieIntroduceItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieIntroduceItem.m; sourceTree = "<group>"; };
+		04BD513121E5849300A6324A /* Introduce.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Introduce.plist; sourceTree = "<group>"; };
+		04BD513321E59D5800A6324A /* MoviePublishCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviePublishCell.h; sourceTree = "<group>"; };
+		04BD513421E59D5800A6324A /* MoviePublishCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePublishCell.m; sourceTree = "<group>"; };
+		04BD513621E5A3AC00A6324A /* MoviePublishCommonheaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviePublishCommonheaderView.h; sourceTree = "<group>"; };
+		04BD513721E5A3AC00A6324A /* MoviePublishCommonheaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePublishCommonheaderView.m; sourceTree = "<group>"; };
+		04BD513921E5A7E000A6324A /* MoviePublishActorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviePublishActorCell.h; sourceTree = "<group>"; };
+		04BD513A21E5A7E000A6324A /* MoviePublishActorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePublishActorCell.m; sourceTree = "<group>"; };
+		04BD513C21E5BF7700A6324A /* MovieActor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MovieActor.plist; sourceTree = "<group>"; };
+		04BD513E21E5BFD100A6324A /* MovieIntroduceActorItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieIntroduceActorItem.h; sourceTree = "<group>"; };
+		04BD513F21E5BFD100A6324A /* MovieIntroduceActorItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieIntroduceActorItem.m; sourceTree = "<group>"; };
+		04BD514121E5C69900A6324A /* MoviePublishActorInnerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviePublishActorInnerCell.h; sourceTree = "<group>"; };
+		04BD514221E5C69900A6324A /* MoviePublishActorInnerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePublishActorInnerCell.m; sourceTree = "<group>"; };
+		04BD514421E5D18900A6324A /* MoviePhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviePhotoCell.h; sourceTree = "<group>"; };
+		04BD514521E5D18900A6324A /* MoviePhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePhotoCell.m; sourceTree = "<group>"; };
+		04BD514721E5D19900A6324A /* MoviePhotoInnerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviePhotoInnerCell.h; sourceTree = "<group>"; };
+		04BD514821E5D19900A6324A /* MoviePhotoInnerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePhotoInnerCell.m; sourceTree = "<group>"; };
+		04BD514A21E5D1C500A6324A /* MovieintroduceVideoPhotoItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieintroduceVideoPhotoItem.h; sourceTree = "<group>"; };
+		04BD514B21E5D1C500A6324A /* MovieintroduceVideoPhotoItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieintroduceVideoPhotoItem.m; sourceTree = "<group>"; };
+		04BD514D21E5D37800A6324A /* VideoPhoto.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = VideoPhoto.plist; sourceTree = "<group>"; };
+		04BD514F21E5DDCD00A6324A /* MoviePublicCommentsHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviePublicCommentsHeaderView.h; sourceTree = "<group>"; };
+		04BD515021E5DDCD00A6324A /* MoviePublicCommentsHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePublicCommentsHeaderView.m; sourceTree = "<group>"; };
+		04BD515221E5E11500A6324A /* MoviePublishCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviePublishCommentCell.h; sourceTree = "<group>"; };
+		04BD515321E5E11500A6324A /* MoviePublishCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePublishCommentCell.m; sourceTree = "<group>"; };
+		04BD515521E5E5F000A6324A /* MovieIntroduceCommentItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieIntroduceCommentItem.h; sourceTree = "<group>"; };
+		04BD515621E5E5F000A6324A /* MovieIntroduceCommentItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieIntroduceCommentItem.m; sourceTree = "<group>"; };
+		04BD515821E5E67800A6324A /* Comments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Comments.plist; sourceTree = "<group>"; };
 		04E1BE0121E42DE30001139C /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		04E1BE0221E42DE30001139C /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		04E1BE0421E431A80001139C /* HomeBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeBannerView.h; sourceTree = "<group>"; };
@@ -293,6 +340,8 @@
 			children = (
 				04E1BE0121E42DE30001139C /* HomeViewController.h */,
 				04E1BE0221E42DE30001139C /* HomeViewController.m */,
+				04BD512821E57B0E00A6324A /* MoviePubliishViewController.h */,
+				04BD512921E57B0E00A6324A /* MoviePubliishViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -306,6 +355,14 @@
 				04E1BE1421E4728D0001139C /* HomeRecommendItem.m */,
 				3CB0B1DF21E4C80A009C8E74 /* HomeMovieDevoteItem.h */,
 				3CB0B1E021E4C80A009C8E74 /* HomeMovieDevoteItem.m */,
+				04BD512E21E5840B00A6324A /* MovieIntroduceItem.h */,
+				04BD512F21E5840B00A6324A /* MovieIntroduceItem.m */,
+				04BD513E21E5BFD100A6324A /* MovieIntroduceActorItem.h */,
+				04BD513F21E5BFD100A6324A /* MovieIntroduceActorItem.m */,
+				04BD514A21E5D1C500A6324A /* MovieintroduceVideoPhotoItem.h */,
+				04BD514B21E5D1C500A6324A /* MovieintroduceVideoPhotoItem.m */,
+				04BD515521E5E5F000A6324A /* MovieIntroduceCommentItem.h */,
+				04BD515621E5E5F000A6324A /* MovieIntroduceCommentItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,6 +380,22 @@
 				04E1BE1721E474180001139C /* RecommendInnerCell.m */,
 				3CB0B1DC21E4C3C2009C8E74 /* MovieDevoteCell.h */,
 				3CB0B1DD21E4C3C2009C8E74 /* MovieDevoteCell.m */,
+				04BD513321E59D5800A6324A /* MoviePublishCell.h */,
+				04BD513421E59D5800A6324A /* MoviePublishCell.m */,
+				04BD513621E5A3AC00A6324A /* MoviePublishCommonheaderView.h */,
+				04BD513721E5A3AC00A6324A /* MoviePublishCommonheaderView.m */,
+				04BD513921E5A7E000A6324A /* MoviePublishActorCell.h */,
+				04BD513A21E5A7E000A6324A /* MoviePublishActorCell.m */,
+				04BD514121E5C69900A6324A /* MoviePublishActorInnerCell.h */,
+				04BD514221E5C69900A6324A /* MoviePublishActorInnerCell.m */,
+				04BD514421E5D18900A6324A /* MoviePhotoCell.h */,
+				04BD514521E5D18900A6324A /* MoviePhotoCell.m */,
+				04BD514721E5D19900A6324A /* MoviePhotoInnerCell.h */,
+				04BD514821E5D19900A6324A /* MoviePhotoInnerCell.m */,
+				04BD514F21E5DDCD00A6324A /* MoviePublicCommentsHeaderView.h */,
+				04BD515021E5DDCD00A6324A /* MoviePublicCommentsHeaderView.m */,
+				04BD515221E5E11500A6324A /* MoviePublishCommentCell.h */,
+				04BD515321E5E11500A6324A /* MoviePublishCommentCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,6 +403,10 @@
 		04E1BE0A21E4483C0001139C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				04BD515821E5E67800A6324A /* Comments.plist */,
+				04BD514D21E5D37800A6324A /* VideoPhoto.plist */,
+				04BD513C21E5BF7700A6324A /* MovieActor.plist */,
+				04BD513121E5849300A6324A /* Introduce.plist */,
 				3CB0B1E221E4C8D7009C8E74 /* MovieDevote.plist */,
 				04E1BE1921E47F040001139C /* Recommend.plist */,
 				04E1BE0B21E448530001139C /* HomeMovie.plist */,
@@ -470,9 +547,13 @@
 				0439591421E33EA80013DFE0 /* MineContentCell.xib in Resources */,
 				04E1BE0C21E448530001139C /* HomeMovie.plist in Resources */,
 				0491085821E2E250002B12A4 /* LaunchScreen.storyboard in Resources */,
+				04BD514E21E5D37800A6324A /* VideoPhoto.plist in Resources */,
 				3CB0B1E321E4C8D7009C8E74 /* MovieDevote.plist in Resources */,
 				0491085521E2E250002B12A4 /* Assets.xcassets in Resources */,
+				04BD513D21E5BF7700A6324A /* MovieActor.plist in Resources */,
 				0491085321E2E24F002B12A4 /* Main.storyboard in Resources */,
+				04BD513221E5849300A6324A /* Introduce.plist in Resources */,
+				04BD515921E5E67900A6324A /* Comments.plist in Resources */,
 				04E1BE1A21E47F040001139C /* Recommend.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,18 +675,31 @@
 				04E1BE1521E4728D0001139C /* HomeRecommendItem.m in Sources */,
 				0491088921E32C4F002B12A4 /* MainTabBarViewController.m in Sources */,
 				0439590F21E33AAF0013DFE0 /* TDNavView.m in Sources */,
+				04BD514021E5BFD100A6324A /* MovieIntroduceActorItem.m in Sources */,
+				04BD515421E5E11500A6324A /* MoviePublishCommentCell.m in Sources */,
+				04BD515721E5E5F000A6324A /* MovieIntroduceCommentItem.m in Sources */,
 				0491085021E2E24F002B12A4 /* ViewController.m in Sources */,
 				04E1BE1821E474180001139C /* RecommendInnerCell.m in Sources */,
 				0491089421E3318C002B12A4 /* LoginViewController.m in Sources */,
+				04BD514C21E5D1C500A6324A /* MovieintroduceVideoPhotoItem.m in Sources */,
 				0439591321E33EA80013DFE0 /* MineContentCell.m in Sources */,
 				3CB0B1DE21E4C3C2009C8E74 /* MovieDevoteCell.m in Sources */,
+				04BD514621E5D18900A6324A /* MoviePhotoCell.m in Sources */,
 				0491088321E30122002B12A4 /* BaseViewController.m in Sources */,
 				04E1BE0621E431A80001139C /* HomeBannerView.m in Sources */,
+				04BD515121E5DDCD00A6324A /* MoviePublicCommentsHeaderView.m in Sources */,
+				04BD513B21E5A7E000A6324A /* MoviePublishActorCell.m in Sources */,
 				0491089521E3318C002B12A4 /* RegisterViewController.m in Sources */,
+				04BD513021E5840B00A6324A /* MovieIntroduceItem.m in Sources */,
+				04BD512A21E57B0E00A6324A /* MoviePubliishViewController.m in Sources */,
+				04BD513821E5A3AC00A6324A /* MoviePublishCommonheaderView.m in Sources */,
 				0491085B21E2E250002B12A4 /* main.m in Sources */,
+				04BD514921E5D19900A6324A /* MoviePhotoInnerCell.m in Sources */,
+				04BD514321E5C69900A6324A /* MoviePublishActorInnerCell.m in Sources */,
 				04E1BE0F21E449FE0001139C /* HomeZoneTopItem.m in Sources */,
 				04E1BE0921E447B30001139C /* MovieTopCollectionViewCell.m in Sources */,
 				3CB0B1E121E4C80A009C8E74 /* HomeMovieDevoteItem.m in Sources */,
+				04BD513521E59D5800A6324A /* MoviePublishCell.m in Sources */,
 				0491084D21E2E24F002B12A4 /* AppDelegate.m in Sources */,
 				04E1BE1221E472240001139C /* HomeRecomendCollectionViewCell.m in Sources */,
 				0491089821E331A6002B12A4 /* MineViewController.m in Sources */,

@@ -65,11 +65,13 @@
     [self addSubview:_backView];
 //
     _goodsImageView = [[UIImageView alloc] init];
-    _goodsImageView.contentMode = UIViewContentModeScaleToFill;
+    _goodsImageView.contentMode = UIViewContentModeScaleAspectFill;
+    _goodsImageView.clipsToBounds = YES;
     [_backView addSubview:_goodsImageView];
 
     _earnImageView = [[UIImageView alloc] init];
     _earnImageView.contentMode = UIViewContentModeScaleAspectFill;
+    _earnImageView.clipsToBounds = YES;
     [_backView addSubview:_earnImageView];
 
     _itemNameLabel = [[UILabel alloc] init];
@@ -132,7 +134,7 @@
 
     _goodsImageView.backgroundColor = [UIColor brownColor];
     [_goodsImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(weakSelf.backView).offset(0);
+        make.left.mas_equalTo(weakSelf.backView).offset(5);
         make.height.mas_equalTo(weakSelf.frame.size.height *0.85);
         make.width.mas_equalTo(weakSelf.frame.size.height *0.5);
         make.centerY.mas_equalTo(weakSelf.backView);

@@ -16,6 +16,7 @@
 #import "HomeRecommendItem.h"
 #import "MovieDevoteCell.h"
 #import "HomeMovieDevoteItem.h"
+#import "MoviePubliishViewController.h"
 
 
 #define SilderImagesArray @[@"http://gfs5.gomein.net.cn/T1obZ_BmLT1RCvBVdK.jpg",@"http://gfs9.gomein.net.cn/T1C3J_B5LT1RCvBVdK.jpg",@"http://gfs5.gomein.net.cn/T1CwYjBCCT1RCvBVdK.jpg",@"http://gfs7.gomein.net.cn/T1u8V_B4ET1RCvBVdK.jpg",@"http://gfs7.gomein.net.cn/T1zODgB5CT1RCvBVdK.jpg"]
@@ -23,10 +24,6 @@
 
 
 @interface HomeViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
-{
-    BOOL _isClick;
-}
-
 @property (nonatomic, strong) UICollectionView *collectionView;
 /// zone 5栏目
 @property (strong , nonatomic)NSMutableArray<HomeZoneTopItem *> *zoneItem;
@@ -94,17 +91,6 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
     [self setUpData];
     [self setUpBase];
     [self.view addSubview:_collectionView];
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.backgroundColor = [UIColor redColor];
-    btn.frame = CGRectMake(100, 100, 100, 100);
-    [self.view addSubview:btn];
-    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
-}
-
-- (void)btnClick{
-    _isClick = !_isClick;
-    [self.collectionView reloadData];
 }
 
 - (void)setUpData{
@@ -181,9 +167,9 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
             UICollectionReusableView *reuseView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"systemReuse" forIndexPath:indexPath];
             UILabel *label = [[UILabel alloc] init];
             label.textColor = [UIColor blackColor];
-            label.font = [UIFont systemFontOfSize:15];
+            label.font = [UIFont systemFontOfSize:17];
             label.text = @"影视投资";
-            label.frame = CGRectMake(10, 0, kWidth, 35);
+            label.frame = CGRectMake(10, 6, kWidth, 35);
             [reuseView addSubview:label];
             reusableview = reuseView;
         }
@@ -193,13 +179,7 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
     if (section == 0) {
-//        [collectionView layoutIfNeeded];
-        if (!_isClick) {
-            return CGSizeMake(kWidth, 230); //图片滚动的宽高
-        }else{
-            return CGSizeMake(kWidth, 300); //图片滚动的宽高
-        }
-        
+        return CGSizeMake(kWidth, 230); //图片滚动的宽高
     }else if (section == 2){
         return CGSizeMake(kWidth, 35);
     }
@@ -220,6 +200,20 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
     }
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) { /// 影视宣发
+            MoviePubliishViewController *mpVc = [[MoviePubliishViewController alloc] init];
+            mpVc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:mpVc animated:YES];
+        }
+        NSLog(@"click %ld %ld",indexPath.section,indexPath.row);
+    }else if (indexPath.section == 1){
+        NSLog(@"click %ld %ld",indexPath.section,indexPath.row);
+    }
+}
+
+
 #pragma mark - <UICollectionViewDelegateFlowLayout>
 
 #pragma mark - X间距
@@ -230,6 +224,8 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
 //- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
 //    return  (section == 1) ? 30 : 0;
 //}
+
+
 
 
 

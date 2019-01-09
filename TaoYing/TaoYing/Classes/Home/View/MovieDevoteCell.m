@@ -46,6 +46,8 @@
 - (void)setUpUI
 {
     _imageView = [UIImageView new];
+    _imageView.clipsToBounds = YES;
+    _imageView.contentMode = UIViewContentModeScaleToFill;
     [self addSubview:_imageView];
     
     _itemNameLabel = [UILabel new];

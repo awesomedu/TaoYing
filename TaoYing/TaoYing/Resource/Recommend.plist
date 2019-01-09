@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>imageUrl</key>
-		<string>http://gfs1.gomein.net.cn/T1f.CTByCv1RCvBVdK_160.jpeg?v=20170510</string>
+		<string>https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1547025080643&amp;di=92229d88a1824095553ad7eeb6333d44&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.mp.sohu.com%2Fq_mini%2Cc_zoom%2Cw_640%2Fupload%2F20170729%2Fa50508d5f9234125a11108c2120bd226_th.jpg</string>
 		<key>itemTitle</key>
 		<string>影视宣发</string>
 		<key>itemType</key>
@@ -18,7 +18,7 @@
 	</dict>
 	<dict>
 		<key>imageUrl</key>
-		<string>http://gfs.gomein.net.cn/T1wkbTBQdT1RCvBVdK_160.jpg</string>
+		<string>https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1944647360,478205109&amp;fm=26&amp;gp=0.jpg</string>
 		<key>itemTitle</key>
 		<string>影视宣发</string>
 		<key>itemType</key>
@@ -31,8 +31,22 @@
 		<string>90</string>
 	</dict>
 	<dict>
+		<key>itemTitle</key>
+		<string>影视宣发</string>
 		<key>imageUrl</key>
-		<string>http://gfs.gomein.net.cn/T12oVTB5bT1RCvBVdK_160.jpg</string>
+		<string>https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1547025080643&amp;di=92229d88a1824095553ad7eeb6333d44&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.mp.sohu.com%2Fq_mini%2Cc_zoom%2Cw_640%2Fupload%2F20170729%2Fa50508d5f9234125a11108c2120bd226_th.jpg</string>
+		<key>itemType</key>
+		<string>动作情怀</string>
+		<key>itemCost</key>
+		<string>100万元</string>
+		<key>itemSaleCount</key>
+		<string>20万元</string>
+		<key>rewardRate</key>
+		<string>90</string>
+	</dict>
+	<dict>
+		<key>imageUrl</key>
+		<string>https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1944647360,478205109&amp;fm=26&amp;gp=0.jpg</string>
 		<key>itemTitle</key>
 		<string>影视宣发</string>
 		<key>itemType</key>
@@ -45,24 +59,10 @@
 		<string>90</string>
 	</dict>
 	<dict>
-		<key>imageUrl</key>
-		<string>http://gfs.gomein.net.cn/T1aVbTBCET1RCvBVdK_160.jpg</string>
 		<key>itemTitle</key>
 		<string>影视宣发</string>
-		<key>itemType</key>
-		<string>动作情怀</string>
-		<key>itemCost</key>
-		<string>100万元</string>
-		<key>itemSaleCount</key>
-		<string>20万元</string>
-		<key>rewardRate</key>
-		<string>90</string>
-	</dict>
-	<dict>
 		<key>imageUrl</key>
-		<string>http://gfs.gomein.net.cn/T1IkhTBgbv1RCvBVdK_160.jpg</string>
-		<key>itemTitle</key>
-		<string>影视宣发</string>
+		<string>https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1547025080643&amp;di=92229d88a1824095553ad7eeb6333d44&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.mp.sohu.com%2Fq_mini%2Cc_zoom%2Cw_640%2Fupload%2F20170729%2Fa50508d5f9234125a11108c2120bd226_th.jpg</string>
 		<key>itemType</key>
 		<string>动作情怀</string>
 		<key>itemCost</key>

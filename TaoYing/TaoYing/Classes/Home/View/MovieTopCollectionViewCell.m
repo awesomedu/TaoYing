@@ -31,6 +31,7 @@
 - (void)setUpUI{
     _zoneImageView = [[UIImageView alloc] init];
     _zoneImageView.contentMode = UIViewContentModeScaleAspectFill;
+    _zoneImageView.clipsToBounds = YES;
     [self addSubview:_zoneImageView];
     
     _zoneLabel = [[UILabel alloc] init];

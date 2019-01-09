@@ -1,28 +1,28 @@
 //
-//  MoviePublishActorCell.m
+//  MoviePhotoCell.m
 //  TaoYing
 //
 //  Created by mac on 2019/1/9.
 //  Copyright © 2019年 mac. All rights reserved.
 //
 
-#import "MoviePublishActorCell.h"
-#import "MovieIntroduceActorItem.h"
-#import "MoviePublishActorInnerCell.h"
+#import "MoviePhotoCell.h"
+#import "MovieintroduceVideoPhotoItem.h"
+#import "MoviePhotoInnerCell.h"
 #import <GTCommonKit.h>
 #import <MJExtension.h>
 
-@interface MoviePublishActorCell()<UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout>
+@interface MoviePhotoCell ()<UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout>
 
 @property (strong , nonatomic)UICollectionView *collectionView;
-@property (strong , nonatomic)NSMutableArray<MovieIntroduceActorItem *> *actorItems;
-
+@property (strong , nonatomic)NSMutableArray<MovieintroduceVideoPhotoItem *> *moviePhotoItems;
 
 @end
 
-static NSString *const MoviePublishActorInnerCellID = @"MoviePublishActorInnerCell";
+static NSString *const MoviePhotoInnerCellID = @"MoviePhotoInnerCell";
 
-@implementation MoviePublishActorCell
+@implementation MoviePhotoCell
+
 
 #pragma mark - lazyload
 - (UICollectionView *)collectionView
@@ -30,7 +30,7 @@ static NSString *const MoviePublishActorInnerCellID = @"MoviePublishActorInnerCe
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
         //        layout.minimumLineSpacing = 1;
-        layout.itemSize = CGSizeMake(kWidth *0.27, self.frame.size.height);
+        layout.itemSize = CGSizeMake(kWidth *0.45, self.frame.size.height);
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal; //滚动方向
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
         [self addSubview:_collectionView];
@@ -39,17 +39,17 @@ static NSString *const MoviePublishActorInnerCellID = @"MoviePublishActorInnerCe
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         
-        [_collectionView registerClass:[MoviePublishActorInnerCell class] forCellWithReuseIdentifier:MoviePublishActorInnerCellID];
+        [_collectionView registerClass:[MoviePhotoInnerCell class] forCellWithReuseIdentifier:MoviePhotoInnerCellID];
     }
     return _collectionView;
 }
 
 
-- (NSMutableArray<MovieIntroduceActorItem *> *)actorItems{
-    if (!_actorItems) {
-        _actorItems = [NSMutableArray array];
+- (NSMutableArray<MovieintroduceVideoPhotoItem *> *)moviePhotoItems{
+    if (!_moviePhotoItems) {
+        _moviePhotoItems = [NSMutableArray array];
     }
-    return _actorItems;
+    return _moviePhotoItems;
 }
 
 #pragma -mark init
@@ -63,7 +63,7 @@ static NSString *const MoviePublishActorInnerCellID = @"MoviePublishActorInnerCe
 }
 
 - (void)setUpData{
-    self.actorItems = [MovieIntroduceActorItem mj_objectArrayWithFilename:@"MovieActor.plist"];
+    self.moviePhotoItems = [MovieintroduceVideoPhotoItem mj_objectArrayWithFilename:@"VideoPhoto.plist"];
 }
 
 - (void)setUpUI{
@@ -75,25 +75,21 @@ static NSString *const MoviePublishActorInnerCellID = @"MoviePublishActorInnerCe
 #pragma mark - <UICollectionViewDataSource>
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return _actorItems.count;
+    return _moviePhotoItems.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    MoviePublishActorInnerCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MoviePublishActorInnerCellID forIndexPath:indexPath];
-    cell.actorItem = self.actorItems[indexPath.row];
+    MoviePhotoInnerCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MoviePhotoInnerCellID forIndexPath:indexPath];
+    cell.moviePhotoItem = self.moviePhotoItems[indexPath.row];
     
     return cell;
 }
 
 #pragma mark - <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"影视宣发 演员%zd",indexPath.row);
+    NSLog(@"影视宣发 视频剧照%zd",indexPath.row);
 }
-
-
-
-
 
 
 @end

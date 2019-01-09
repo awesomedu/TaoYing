@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol MoviePublishCellDelegate<NSObject>
+- (void)foldClick:(UIButton *)foldBtn;
+
+@end
+
+@class MovieIntroduceItem;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MoviePublishCell : UICollectionViewCell
+@property (nonatomic, strong) MovieIntroduceItem *item;
+@property (nonatomic, assign) id<MoviePublishCellDelegate> delegate;
 
 @end
 

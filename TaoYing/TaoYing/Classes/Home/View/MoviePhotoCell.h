@@ -1,5 +1,5 @@
 //
-//  MoviePublishActorCell.h
+//  MoviePhotoCell.h
 //  TaoYing
 //
 //  Created by mac on 2019/1/9.
@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MoviePublishActorCell : UICollectionViewCell
-
-
+@interface MoviePhotoCell : UICollectionViewCell
 
 @end
 
