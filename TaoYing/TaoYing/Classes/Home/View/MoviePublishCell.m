@@ -92,7 +92,7 @@
     [_iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.mas_equalTo(self).offset(10);
         make.width.mas_equalTo(140);
-        make.height.mas_equalTo(200);
+        make.height.mas_equalTo(160);
     }];
     
     [_itemTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {

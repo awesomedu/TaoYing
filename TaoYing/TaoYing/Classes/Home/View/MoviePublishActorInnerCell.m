@@ -62,7 +62,7 @@
         make.left.mas_equalTo(self).offset(10);
         make.top.mas_equalTo(self).offset(10);
         make.width.mas_equalTo(self.frame.size.width - 20);
-        make.height.mas_equalTo(150);
+        make.height.mas_equalTo(120);
     }];
     
     __weak __typeof(self) weakSelf = self;

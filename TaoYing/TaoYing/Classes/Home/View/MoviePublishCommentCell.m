@@ -88,7 +88,7 @@
     }];
     
     [_commentContentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.userIamgeView.mas_bottom).offset(12);
+        make.top.mas_equalTo(self.userIamgeView.mas_bottom).offset(7);
         make.left.mas_equalTo(self.userNameLabel);
         make.right.mas_equalTo(self).offset(-15);
     }];

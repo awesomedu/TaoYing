@@ -57,6 +57,9 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
         //注册 头部
         [_collectionView registerClass:[MoviePublishCommonheaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:MoviePublishCommonheaderViewID];
         [_collectionView registerClass:[MoviePublicCommentsHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:MoviePublicCommentsHeaderViewID];
+        
+        //注册 尾部
+        [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer"];
 
         // cell
         [_collectionView registerClass:[MoviePublishCell class] forCellWithReuseIdentifier:MoviePublishCellID];
@@ -124,15 +127,15 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
             return CGSizeMake(kWidth, 260 + item.headerViewHeight);
         }
     }else if (indexPath.section == 1){
-        return CGSizeMake(kWidth, 220);
+        return CGSizeMake(kWidth, 160);
     }else if (indexPath.section == 2){
-        return CGSizeMake(kWidth, 180);
+        return CGSizeMake(kWidth, 120);
     }else if (indexPath.section == 3){
         MovieIntroduceCommentItem *item = _commentItem[indexPath.row];
         if (item.itemComments.length) { // comments exist
-            return CGSizeMake(kWidth, 120 + item.cellHeight);
+            return CGSizeMake(kWidth, 115 + item.cellHeight);
         }else{
-            return CGSizeMake(kWidth, 75);
+            return CGSizeMake(kWidth, 70);
         }
         return CGSizeMake(kWidth, 200);
     }
@@ -162,13 +165,6 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
         UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
         return cell;
     }
- 
-}
-
-#pragma -mark MoviePublishCellDelegate
-- (void)foldClick:(UIButton *)foldBtn{
-    _isClick = foldBtn.isSelected;
-    [self.collectionView reloadData];
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
@@ -187,6 +183,12 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
             reusableview = headerView;
         }
     }
+    
+    if (kind == UICollectionElementKindSectionFooter) {
+        UICollectionReusableView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer" forIndexPath:indexPath];
+        footerView.backgroundColor = [UIColor gt_colorWithHexString:@"#eaeaea"];
+        reusableview = footerView;
+    }
     return reusableview;
 }
 
@@ -200,6 +202,18 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
         return CGSizeMake(kWidth, 40);
     }
     return CGSizeZero;
+}
+
+/// header height
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{
+    return CGSizeMake(kWidth,10);
+}
+
+
+#pragma -mark MoviePublishCellDelegate
+- (void)foldClick:(UIButton *)foldBtn{
+    _isClick = foldBtn.isSelected;
+    [self.collectionView reloadData];
 }
 
 
