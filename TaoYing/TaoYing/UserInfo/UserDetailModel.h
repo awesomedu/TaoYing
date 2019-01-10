@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *nickName;
 /// 邮箱
 @property (nonatomic, copy) NSString *email;
+/// 手机
+@property (nonatomic, copy) NSString *phone;
 
 +(instancetype)shareInstance;
 /** 保存model */

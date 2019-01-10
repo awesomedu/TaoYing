@@ -8,6 +8,9 @@
 
 #import "TDRequest.h"
 #import "TDRequestManager.h"
+#import "NSString+ToJson.h"
+#import <MJExtension.h>
+#import "NSString+MD5.h"
 
 @implementation TDRequest
 
@@ -36,11 +39,10 @@
                  username:(NSString *)useraname
                   success:(void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject))success failure:(void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure{
     NSDictionary *dic = @{
-                          @"deviceCode":phoneNum,
-//                          @"inviteCode":inviteCode,
-                          @"password":pwd,
-                          @"username":useraname
-                          };
+                            @"deviceCode":[NSString MD5ForLower32Bate:phoneNum],
+                            @"password":pwd,
+                            @"username":useraname
+                            };
     [TDRequestManager POSTWithUrl:[BaseUrl stringByAppendingString:REGISTER] params:dic success:success failure:failure];
 }
 

@@ -7,8 +7,13 @@
 //
 
 #import "MyTableViewController.h"
+#import "UserDetailModel.h"
+#import <UIImageView+WebCache.h>
 
-@interface MyTableViewController ()
+@interface MyTableViewController ()<UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *userImageView;
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *phoneNumLabel;
 
 @end
 
@@ -29,12 +34,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self configureUI];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)configureUI{
+    UserDetailModel *model = [UserDetailModel getUserModel];
+    [self.userImageView sd_setImageWithURL:[NSURL URLWithString:model.himageUrl]];
+    _userNameLabel.text = model.username;
+    _phoneNumLabel.text = model.phone.length ? model.phone : @"188888***88";
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 

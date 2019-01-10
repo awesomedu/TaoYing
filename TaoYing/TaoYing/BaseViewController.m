@@ -35,6 +35,17 @@
     self.navigationItem.leftBarButtonItem = leftItem;
 }
 
+- (void)setTitleString:(NSString *)titleString{
+    _titleString = titleString;
+    UILabel *titleLabel = [[UILabel alloc] init];
+    titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
+    titleLabel.textColor = [UIColor whiteColor];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.text = titleString;
+//    [titleLabel sizeToFit];
+    self.navigationItem.titleView = titleLabel;
+}
+
 - (void)backClick{
     [self.navigationController popViewControllerAnimated:YES];
 }

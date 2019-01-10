@@ -23,6 +23,7 @@
 @property (nonatomic, strong) UILabel *protectLabel;
 @property (nonatomic, strong) UILabel *statusLabel;
 @property (nonatomic, strong) UIProgressView *progressView;
+@property (nonatomic, strong) UILabel *percentLabel;
 
 
 
@@ -106,6 +107,11 @@
     _progressView.progressTintColor=[UIColor gt_colorWithHexString:@"#cc3399"];
     
     [self addSubview:_progressView];
+    
+    _percentLabel = [[UILabel alloc] init];
+    _percentLabel.font = [UIFont systemFontOfSize:12];
+    _percentLabel.textColor = [UIColor gt_colorWithHexString:@"#cc3399"];
+    [self addSubview:_percentLabel];
     
 }
 
@@ -200,6 +206,11 @@
     
     _progressView.layer.masksToBounds = YES;
     _progressView.layer.cornerRadius = 3;
+    
+    [_percentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(weakSelf.progressView).offset(0);
+        make.bottom.mas_equalTo(weakSelf.progressView.mas_top).offset(-5);
+    }];
 }
 
 
@@ -219,6 +230,8 @@
     _statusLabel.text = movieDevoteItem.status;
     
     _progressView.progress = [movieDevoteItem.process floatValue] / 100.0;
+    
+    _percentLabel.text = [NSString stringWithFormat:@"%@%%",movieDevoteItem.process];
 }
 
 

@@ -50,6 +50,10 @@
 }
 
 - (IBAction)loginClick:(UIButton *)sender {
+    if (!(_loginField.text.length && _pwdField.text.length)) {
+        [MBProgressHUD showErrorMessage:@"请输入完整信息"];
+        return;
+    }
     NSString *md5Str = [NSString MD5ForLower32Bate:_pwdField.text];
     [MBProgressHUD showActivityMessageInWindow:LoadingString];
     [TDRequest loginWithUserName:_loginField.text pwd:md5Str success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -57,7 +61,8 @@
         NSLog(@"res = %@",responseObject);
         if ([responseObject[@"code"] integerValue]== 200) {
             //save info
-            [[UserDetailModel shareInstance] setModel:responseObject[@"data"]];
+            NSMutableDictionary *dic = responseObject[@"data"];
+            [[UserDetailModel shareInstance] setModel:[dic copy]];
             [UserDetailModel save];
             UIStoryboard *mainTabSb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
             MainTabBarViewController *mVc = [mainTabSb instantiateViewControllerWithIdentifier:@"MainTabBarViewController"];

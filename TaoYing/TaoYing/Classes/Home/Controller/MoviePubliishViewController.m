@@ -83,6 +83,7 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
 #pragma mark - initialize
 - (void)setUpBase
 {
+    self.titleString = @"影视宣发";
     if (@available(iOS 11.0, *)) {
         self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {

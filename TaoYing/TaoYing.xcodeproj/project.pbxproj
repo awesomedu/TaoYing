@@ -56,6 +56,12 @@
 		04E1BE1521E4728D0001139C /* HomeRecommendItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE1421E4728D0001139C /* HomeRecommendItem.m */; };
 		04E1BE1821E474180001139C /* RecommendInnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE1721E474180001139C /* RecommendInnerCell.m */; };
 		04E1BE1A21E47F040001139C /* Recommend.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04E1BE1921E47F040001139C /* Recommend.plist */; };
+		3C3488B121E7586600F8656D /* NSString+ToJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488B021E7586600F8656D /* NSString+ToJson.m */; };
+		3C3488B421E7793100F8656D /* VipRegisterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488B321E7793100F8656D /* VipRegisterTableViewController.m */; };
+		3C3488B721E7823800F8656D /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488B621E7823800F8656D /* BaseTableViewController.m */; };
+		3C3488BA21E7896300F8656D /* VipPayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488B921E7896300F8656D /* VipPayTableViewController.m */; };
+		3C3488C021E78EF600F8656D /* InviteCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488BF21E78EF600F8656D /* InviteCodeViewController.m */; };
+		3C3488C321E7912300F8656D /* UploadPictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488C221E7912300F8656D /* UploadPictureTableViewController.m */; };
 		3CB0B1DE21E4C3C2009C8E74 /* MovieDevoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0B1DD21E4C3C2009C8E74 /* MovieDevoteCell.m */; };
 		3CB0B1E121E4C80A009C8E74 /* HomeMovieDevoteItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0B1E021E4C80A009C8E74 /* HomeMovieDevoteItem.m */; };
 		3CB0B1E321E4C8D7009C8E74 /* MovieDevote.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CB0B1E221E4C8D7009C8E74 /* MovieDevote.plist */; };
@@ -179,6 +185,18 @@
 		2EAAE89D7CDB23CA041F3018 /* Pods-TaoYingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoYingUITests.release.xcconfig"; path = "Target Support Files/Pods-TaoYingUITests/Pods-TaoYingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		309072D2C9E03909549DBE9B /* Pods-TaoYingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoYingTests.debug.xcconfig"; path = "Target Support Files/Pods-TaoYingTests/Pods-TaoYingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		358CE531C9F55161585E1017 /* libPods-TaoYing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaoYing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C3488AF21E7586600F8656D /* NSString+ToJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ToJson.h"; sourceTree = "<group>"; };
+		3C3488B021E7586600F8656D /* NSString+ToJson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ToJson.m"; sourceTree = "<group>"; };
+		3C3488B221E7793100F8656D /* VipRegisterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VipRegisterTableViewController.h; sourceTree = "<group>"; };
+		3C3488B321E7793100F8656D /* VipRegisterTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VipRegisterTableViewController.m; sourceTree = "<group>"; };
+		3C3488B521E7823800F8656D /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		3C3488B621E7823800F8656D /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		3C3488B821E7896300F8656D /* VipPayTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VipPayTableViewController.h; sourceTree = "<group>"; };
+		3C3488B921E7896300F8656D /* VipPayTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VipPayTableViewController.m; sourceTree = "<group>"; };
+		3C3488BE21E78EF600F8656D /* InviteCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InviteCodeViewController.h; sourceTree = "<group>"; };
+		3C3488BF21E78EF600F8656D /* InviteCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InviteCodeViewController.m; sourceTree = "<group>"; };
+		3C3488C121E7912300F8656D /* UploadPictureTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadPictureTableViewController.h; sourceTree = "<group>"; };
+		3C3488C221E7912300F8656D /* UploadPictureTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadPictureTableViewController.m; sourceTree = "<group>"; };
 		3CB0B1DC21E4C3C2009C8E74 /* MovieDevoteCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDevoteCell.h; sourceTree = "<group>"; };
 		3CB0B1DD21E4C3C2009C8E74 /* MovieDevoteCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDevoteCell.m; sourceTree = "<group>"; };
 		3CB0B1DF21E4C80A009C8E74 /* HomeMovieDevoteItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeMovieDevoteItem.h; sourceTree = "<group>"; };
@@ -245,6 +263,8 @@
 				04302BED21E7118400304054 /* NSString+MD5.m */,
 				04302BF421E71B1D00304054 /* MBProgressHUD+GTCommonHud.h */,
 				04302BF521E71B1D00304054 /* MBProgressHUD+GTCommonHud.m */,
+				3C3488AF21E7586600F8656D /* NSString+ToJson.h */,
+				3C3488B021E7586600F8656D /* NSString+ToJson.m */,
 			);
 			path = Categary;
 			sourceTree = "<group>";
@@ -299,6 +319,8 @@
 				0491088A21E3318C002B12A4 /* Classes */,
 				0491088121E30122002B12A4 /* BaseViewController.h */,
 				0491088221E30122002B12A4 /* BaseViewController.m */,
+				3C3488B521E7823800F8656D /* BaseTableViewController.h */,
+				3C3488B621E7823800F8656D /* BaseTableViewController.m */,
 				0491088721E32C4F002B12A4 /* MainTabBarViewController.h */,
 				0491088821E32C4F002B12A4 /* MainTabBarViewController.m */,
 				0491084B21E2E24F002B12A4 /* AppDelegate.h */,
@@ -363,6 +385,14 @@
 				042EACB521E6E6E100A7E8AC /* MyTableViewController.m */,
 				04302BDF21E6EC0000304054 /* ChargeViewController.h */,
 				04302BE021E6EC0000304054 /* ChargeViewController.m */,
+				3C3488B221E7793100F8656D /* VipRegisterTableViewController.h */,
+				3C3488B321E7793100F8656D /* VipRegisterTableViewController.m */,
+				3C3488B821E7896300F8656D /* VipPayTableViewController.h */,
+				3C3488B921E7896300F8656D /* VipPayTableViewController.m */,
+				3C3488BE21E78EF600F8656D /* InviteCodeViewController.h */,
+				3C3488BF21E78EF600F8656D /* InviteCodeViewController.m */,
+				3C3488C121E7912300F8656D /* UploadPictureTableViewController.h */,
+				3C3488C221E7912300F8656D /* UploadPictureTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -752,10 +782,14 @@
 				0491085021E2E24F002B12A4 /* ViewController.m in Sources */,
 				04E1BE1821E474180001139C /* RecommendInnerCell.m in Sources */,
 				0491089421E3318C002B12A4 /* LoginViewController.m in Sources */,
+				3C3488C321E7912300F8656D /* UploadPictureTableViewController.m in Sources */,
+				3C3488B721E7823800F8656D /* BaseTableViewController.m in Sources */,
 				04BD514C21E5D1C500A6324A /* MovieintroduceVideoPhotoItem.m in Sources */,
 				04302BE821E6F5F100304054 /* TDRequest.m in Sources */,
 				0439591321E33EA80013DFE0 /* MineContentCell.m in Sources */,
 				04302BEE21E7118400304054 /* NSString+MD5.m in Sources */,
+				3C3488C021E78EF600F8656D /* InviteCodeViewController.m in Sources */,
+				3C3488B421E7793100F8656D /* VipRegisterTableViewController.m in Sources */,
 				3CB0B1DE21E4C3C2009C8E74 /* MovieDevoteCell.m in Sources */,
 				042EACB621E6E6E100A7E8AC /* MyTableViewController.m in Sources */,
 				04BD514621E5D18900A6324A /* MoviePhotoCell.m in Sources */,
@@ -770,6 +804,8 @@
 				0491085B21E2E250002B12A4 /* main.m in Sources */,
 				04BD514921E5D19900A6324A /* MoviePhotoInnerCell.m in Sources */,
 				04302BFA21E71C7900304054 /* UserDetailModel.m in Sources */,
+				3C3488BA21E7896300F8656D /* VipPayTableViewController.m in Sources */,
+				3C3488B121E7586600F8656D /* NSString+ToJson.m in Sources */,
 				04BD514321E5C69900A6324A /* MoviePublishActorInnerCell.m in Sources */,
 				04E1BE0F21E449FE0001139C /* HomeZoneTopItem.m in Sources */,
 				04302BF621E71B1D00304054 /* MBProgressHUD+GTCommonHud.m in Sources */,

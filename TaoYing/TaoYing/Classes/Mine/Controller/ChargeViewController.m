@@ -8,7 +8,7 @@
 
 #import "ChargeViewController.h"
 
-@interface ChargeViewController ()
+@interface ChargeViewController ()<UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIView *backView1;
 @property (weak, nonatomic) IBOutlet UIView *backView2;
 @property (weak, nonatomic) IBOutlet UIView *backView3;
@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.titleString = @"充值";
     NSArray *arr = @[
                      _backView1,
                      _backView2,
@@ -36,6 +37,12 @@
         obj.layer.cornerRadius = 10.0;
     }];
 }
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+
 
 /*
 #pragma mark - Navigation

@@ -42,9 +42,11 @@
     [super viewDidLoad];
     [self setUpUI];
     [self addNotiTheField];
+    
 }
 
 - (void)setUpUI{
+    self.titleString = @"注册";
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.verfyCodeButton.bounds      byRoundingCorners:UIRectCornerTopRight | UIRectCornerBottomRight    cornerRadii:CGSizeMake(3, 3)];
     CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
     maskLayer.frame = self.verfyCodeButton.bounds;
@@ -104,6 +106,7 @@
     NSString *pwdStr = _pwdTextField.text;
     [MBProgressHUD showActivityMessageInWindow:@""];
     [TDRequest registerWithPhone:_phoneTextField.text inviteCode:nil password:[NSString MD5ForLower32Bate:pwdStr] username:_userNameTextField.text success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"regis = %@",responseObject);
         [MBProgressHUD hideHUD];
         if ([responseObject[@"code"] integerValue] == 200) {
             [self.navigationController popViewControllerAnimated:YES];
