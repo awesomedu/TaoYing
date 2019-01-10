@@ -132,7 +132,7 @@
         make.width.height.mas_equalTo(@60);
     }];
 
-    _goodsImageView.backgroundColor = [UIColor brownColor];
+//    _goodsImageView.backgroundColor = [UIColor brownColor];
     [_goodsImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(weakSelf.backView).offset(5);
         make.height.mas_equalTo(weakSelf.frame.size.height *0.85);

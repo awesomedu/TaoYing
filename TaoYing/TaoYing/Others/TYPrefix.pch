@@ -1,0 +1,30 @@
+//
+//  TYPrefix.pch
+//  TaoYing
+//
+//  Created by mac on 2019/1/10.
+//  Copyright © 2019年 mac. All rights reserved.
+//
+
+#ifndef TYPrefix_pch
+#define TYPrefix_pch
+
+#define BaseUrl @"http://148.70.53.15:8088"
+
+#define LOGIN @"/api/v1/login"
+#define SEND_MSG @"/api/v1/sendSms"
+#define REGISTER @"/api/v1/register"
+#define HOME @"/api/v1/home"
+
+
+
+#define LoadingString @"登陆中..."
+#define LoginWrong @"用户名或密码错误"
+#define SendMsgError @"验证码发送失败"
+#define RegisterFail @"用户注册失败"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TYPrefix_pch */

@@ -90,7 +90,7 @@ static NSString *const RecommendInnerCellID = @"RecommendInnerCell";
 #pragma mark - <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    NSLog(@"点击了计时商品%zd",indexPath.row);
+    NSLog(@"点击推荐%zd",indexPath.row);
     
 }
 

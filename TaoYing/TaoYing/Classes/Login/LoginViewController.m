@@ -8,6 +8,10 @@
 
 #import "LoginViewController.h"
 #import "MainTabBarViewController.h"
+#import "TDRequest.h"
+#import "NSString+MD5.h"
+#import "MBProgressHUD+GTCommonHud.h"
+#import "UserDetailModel.h"
 
 @implementation LoginViewController
 
@@ -46,9 +50,26 @@
 }
 
 - (IBAction)loginClick:(UIButton *)sender {
-    UIStoryboard *mainTabSb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    MainTabBarViewController *mVc = [mainTabSb instantiateViewControllerWithIdentifier:@"MainTabBarViewController"];
-    [UIApplication sharedApplication].keyWindow.rootViewController = mVc;
+    NSString *md5Str = [NSString MD5ForLower32Bate:_pwdField.text];
+    [MBProgressHUD showActivityMessageInWindow:LoadingString];
+    [TDRequest loginWithUserName:_loginField.text pwd:md5Str success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [MBProgressHUD hideHUD];
+        NSLog(@"res = %@",responseObject);
+        if ([responseObject[@"code"] integerValue]== 200) {
+            //save info
+            [[UserDetailModel shareInstance] setModel:responseObject[@"data"]];
+            [UserDetailModel save];
+            UIStoryboard *mainTabSb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+            MainTabBarViewController *mVc = [mainTabSb instantiateViewControllerWithIdentifier:@"MainTabBarViewController"];
+            [UIApplication sharedApplication].keyWindow.rootViewController = mVc;
+        }else{
+            [MBProgressHUD showErrorMessage:LoginWrong];
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [MBProgressHUD hideHUD];
+        NSLog(@"err = %@",error.description);
+    }];
+ 
 }
 
 

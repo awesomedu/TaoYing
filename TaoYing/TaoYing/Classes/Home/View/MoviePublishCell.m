@@ -75,6 +75,7 @@
     [_foldBtn setImage:[UIImage imageNamed:@"arrow_down"] forState:UIControlStateNormal];
     [_foldBtn setImage:[UIImage imageNamed:@"arrow_up"] forState:UIControlStateSelected];
     [_foldBtn addTarget:self action:@selector(btnclick:) forControlEvents:UIControlEventTouchUpInside];
+
     [self addSubview:_foldBtn];
 }
 

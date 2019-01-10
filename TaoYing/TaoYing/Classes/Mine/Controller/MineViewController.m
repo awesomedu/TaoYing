@@ -75,7 +75,7 @@
 -(UIImageView *)headImageView{
     if (!_headImageView) {
         _headImageView=[[UIImageView alloc]init];
-        _headImageView.backgroundColor = [UIColor brownColor];
+//        _headImageView.backgroundColor = [UIColor brownColor];
         _headImageView.frame=CGRectMake(0, 0, kWidth, backImgHeight);
         _headImageView.backgroundColor=[UIColor clearColor];
         _headImageView.userInteractionEnabled = YES;
@@ -87,8 +87,8 @@
         [_headerImage.layer setCornerRadius:35];
         _headerImage.backgroundColor=[UIColor whiteColor];
         _headerImage.userInteractionEnabled=YES;
-        UITapGestureRecognizer *header_tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(header_tap_Click:)];
-        [_headerImage addGestureRecognizer:header_tap];
+//        UITapGestureRecognizer *header_tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(header_tap_Click:)];
+//        [_headerImage addGestureRecognizer:header_tap];
         [_headImageView addSubview:_headerImage];
         
         UIView *underLineView = [UIView new];

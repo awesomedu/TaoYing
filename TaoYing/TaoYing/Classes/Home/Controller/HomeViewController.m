@@ -17,6 +17,8 @@
 #import "MovieDevoteCell.h"
 #import "HomeMovieDevoteItem.h"
 #import "MoviePubliishViewController.h"
+#import "UserDetailModel.h"
+#import "TDRequest.h"
 
 
 #define SilderImagesArray @[@"http://gfs5.gomein.net.cn/T1obZ_BmLT1RCvBVdK.jpg",@"http://gfs9.gomein.net.cn/T1C3J_B5LT1RCvBVdK.jpg",@"http://gfs5.gomein.net.cn/T1CwYjBCCT1RCvBVdK.jpg",@"http://gfs7.gomein.net.cn/T1u8V_B4ET1RCvBVdK.jpg",@"http://gfs7.gomein.net.cn/T1zODgB5CT1RCvBVdK.jpg"]
@@ -48,8 +50,6 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
 
 
 #pragma -mark lifeCycle
-
-
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
@@ -59,6 +59,7 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
     [super viewWillDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
+
 #pragma mark - LazyLoad
 - (UICollectionView *)collectionView
 {
@@ -90,10 +91,18 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
     self.view.backgroundColor = [UIColor gt_colorWithHexString:@"#f8f8f8"];
     [self setUpData];
     [self setUpBase];
-    [self.view addSubview:_collectionView];
+    [self.view addSubview:_collectionView];    
 }
 
 - (void)setUpData{
+    UserDetailModel *model = [UserDetailModel shareInstance];
+    NSLog(@"token = %@",model.tokenValue);
+    [TDRequest getHomeDataWithToken:model.tokenValue success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"res = %@",responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"___error = %@",error.description);
+    }];
+    
     _zoneItem = [HomeZoneTopItem mj_objectArrayWithFilename:@"HomeMovie.plist"];
     _devoteItem = [HomeMovieDevoteItem mj_objectArrayWithFilename:@"MovieDevote.plist"];
     _recommendItem = [HomeRecommendItem mj_objectArrayWithFilename:@"Recommend.plist"];

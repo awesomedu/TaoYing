@@ -8,6 +8,9 @@
 
 #import "RegisterViewController.h"
 #import "GTCommonKit.h"
+#import "TDRequest.h"
+#import "MBProgressHUD+GTCommonHud.h"
+#import "NSString+MD5.h"
 
 @interface RegisterViewController ()
 /// 手机号
@@ -24,6 +27,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *confirmButton;
 /// 同意协议
 @property (weak, nonatomic) IBOutlet UIButton *agreeButton;
+
+
 
 @end
 
@@ -67,11 +72,12 @@
 #pragma mark -给每个textfield添加事件
 -(void)changedTextField:(UITextField *)textField
 {
-    if ([_phoneTextField.text isNotEmptyWords] &&
+    if ((_phoneTextField.text.length == 11) &&
         [_userNameTextField.text isNotEmptyWords] &&
         [_pwdTextField.text isNotEmptyWords] &&
         [_verfyCodeField.text isNotEmptyWords]) {
         _confirmButton.backgroundColor = [UIColor gt_colorWithHexString:@"#DA4B96"];
+        
         
         [_confirmButton setTitleColor:[UIColor gt_colorWithHexString:@"#FFFFFF"] forState:UIControlStateNormal];
     }else{
@@ -81,8 +87,32 @@
 }
 
 - (IBAction)verfyBtnClick:(UIButton *)sender {
-    
-    [sender gt_countTimeTask];
+    [MBProgressHUD showActivityMessageInWindow:@""];
+    [TDRequest sendMsgWithPhone:_phoneTextField.text success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [MBProgressHUD hideHUD];
+        if ([responseObject[@"code"] integerValue] == 200) {
+            [sender gt_countTimeTask];
+        }else{
+            [MBProgressHUD showErrorMessage:SendMsgError];
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [MBProgressHUD showErrorMessage:SendMsgError];
+    }];
+}
+
+- (IBAction)registerClick:(UIButton *)sender {
+    NSString *pwdStr = _pwdTextField.text;
+    [MBProgressHUD showActivityMessageInWindow:@""];
+    [TDRequest registerWithPhone:_phoneTextField.text inviteCode:nil password:[NSString MD5ForLower32Bate:pwdStr] username:_userNameTextField.text success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [MBProgressHUD hideHUD];
+        if ([responseObject[@"code"] integerValue] == 200) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }else{
+            [MBProgressHUD showErrorMessage:RegisterFail];
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [MBProgressHUD showErrorMessage:error.description];
+    }];
 }
 
 /*

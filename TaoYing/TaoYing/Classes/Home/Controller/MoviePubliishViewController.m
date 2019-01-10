@@ -121,10 +121,12 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         if (!_isClick) {
-            return  CGSizeMake(kWidth, 260);
+            NSString *content = @"单行高度数据";
+            CGSize size =[content sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]}];
+            return  CGSizeMake(kWidth, 202 + size.height*3 + 5); // 3行高度
         }else{
             MovieIntroduceItem *item = [_introItem lastObject];
-            return CGSizeMake(kWidth, 260 + item.headerViewHeight);
+            return CGSizeMake(kWidth, 202 + item.headerViewHeight);
         }
     }else if (indexPath.section == 1){
         return CGSizeMake(kWidth, 160);
