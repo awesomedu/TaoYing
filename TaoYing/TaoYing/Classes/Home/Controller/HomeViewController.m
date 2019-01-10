@@ -33,6 +33,8 @@
 @property (strong , nonatomic)NSMutableArray<HomeRecommendItem *> *recommendItem;
 /// 影视投资
 @property (strong , nonatomic)NSMutableArray<HomeMovieDevoteItem *> *devoteItem;
+/// banner
+@property (nonatomic, strong) NSMutableArray *bannerArr;
 
 
 
@@ -47,6 +49,13 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
 
 
 @implementation HomeViewController
+
+- (NSMutableArray *)bannerArr{
+    if (!_bannerArr) {
+        _bannerArr = [NSMutableArray array];
+    }
+    return _bannerArr;
+}
 
 
 #pragma -mark lifeCycle
@@ -101,6 +110,16 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
         NSLog(@"res = %@",responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"___error = %@",error.description);
+    }];
+    
+    [TDRequest getHomeBannerSuccess:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSArray *arr = responseObject[@"data"];
+        [arr enumerateObjectsUsingBlock:^(NSDictionary *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [self.bannerArr addObject:obj[@"bannerUrl"]];
+            [self.collectionView reloadData];
+        }];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
     }];
     
     _zoneItem = [HomeZoneTopItem mj_objectArrayWithFilename:@"HomeMovie.plist"];
@@ -167,8 +186,7 @@ static NSString *const MovieDevoteCellID = @"MovieDevoteCell";
             HomeBannerView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HomeBannerViewID forIndexPath:indexPath];
             headerView = nil;
             headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HomeBannerViewID forIndexPath:indexPath];
-            headerView.imageArr = SilderImagesArray;
-            
+            headerView.imageArr = [self.bannerArr copy];
             reusableview = headerView;
         }
         

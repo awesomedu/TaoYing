@@ -35,6 +35,9 @@ NS_ASSUME_NONNULL_BEGIN
                      success:(void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject))success
                      failure:(void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure;
 
+/// 轮播图
++ (void)getHomeBannerSuccess:(void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject))success
+                     failure:(void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure;
 
 
 @end

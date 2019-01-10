@@ -54,5 +54,10 @@
     
 }
 
++ (void)getHomeBannerSuccess:(void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject))success
+                     failure:(void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure{
+    [TDRequestManager GETWithUrl:[BaseUrl stringByAppendingString:BANNER] params:nil success:success failure:failure];
+}
+
 
 @end

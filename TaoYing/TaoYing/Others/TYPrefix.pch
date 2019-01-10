@@ -15,6 +15,7 @@
 #define SEND_MSG @"/api/v1/sendSms"
 #define REGISTER @"/api/v1/register"
 #define HOME @"/api/v1/home"
+#define BANNER @"/api/v1/banner/getAll"
 
 
 
