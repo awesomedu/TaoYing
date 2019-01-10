@@ -8,6 +8,8 @@ target 'TaoYing' do
   pod 'SDCycleScrollView', '~> 1.75'
   pod 'Masonry', '~> 1.1.0'
   pod 'MJExtension', '~> 3.0.15.1'
+
+
   # Pods for TaoYing
 
   target 'TaoYingTests' do

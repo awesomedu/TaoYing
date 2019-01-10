@@ -18,6 +18,8 @@
 #import "MoviePublicCommentsHeaderView.h"
 #import "MovieIntroduceCommentItem.h"
 #import "MoviePublishCommentCell.h"
+#import "MoviePublishMoreFooterView.h"
+#import "MoviePublishShareCollectionViewCell.h"
 
 
 @interface MoviePubliishViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,MoviePublishCellDelegate>
@@ -41,7 +43,8 @@ static NSString *const MoviePublishActorCellID = @"MoviePublishActorCell";
 static NSString *const MoviePhotoCellID = @"MoviePhotoCell";
 static NSString *const MoviePublicCommentsHeaderViewID = @"MoviePublicCommentsHeaderView";
 static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
-
+static NSString *const MoviePublishMoreFooterViewID = @"MoviePublishMoreFooterView";
+static NSString *const MoviePublishShareCollectionViewCellID = @"MoviePublishShareCollectionViewCell";
 
 
 #pragma mark - LazyLoad
@@ -57,15 +60,20 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
         //注册 头部
         [_collectionView registerClass:[MoviePublishCommonheaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:MoviePublishCommonheaderViewID];
         [_collectionView registerClass:[MoviePublicCommentsHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:MoviePublicCommentsHeaderViewID];
+        [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
+        
         
         //注册 尾部
         [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer"];
+        [_collectionView registerClass:[MoviePublishMoreFooterView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:MoviePublishMoreFooterViewID];
+        
 
         // cell
         [_collectionView registerClass:[MoviePublishCell class] forCellWithReuseIdentifier:MoviePublishCellID];
         [_collectionView registerClass:[MoviePublishActorCell class] forCellWithReuseIdentifier:MoviePublishActorCellID];
         [_collectionView registerClass:[MoviePhotoCell class] forCellWithReuseIdentifier:MoviePhotoCellID];
         [_collectionView registerClass:[MoviePublishCommentCell class] forCellWithReuseIdentifier:MoviePublishCommentCellID];
+        [_collectionView registerClass:[MoviePublishShareCollectionViewCell class] forCellWithReuseIdentifier:MoviePublishShareCollectionViewCellID];
         
         [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     }
@@ -100,7 +108,7 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
 
 #pragma mark - <UICollectionViewDataSource>
 - (NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 4;
+    return 5;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -141,11 +149,11 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
             return CGSizeMake(kWidth, 70);
         }
         return CGSizeMake(kWidth, 200);
+    }else if (indexPath.section == 4){
+        return CGSizeMake(kWidth, 250);
     }
     return CGSizeZero;
 }
-
-
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
@@ -163,6 +171,10 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
         MoviePublishCommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MoviePublishCommentCellID forIndexPath:indexPath];
         cell.commentItem = _commentItem[indexPath.row];
         return cell;
+    }else if (indexPath.section == 4){
+        MoviePublishShareCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MoviePublishShareCollectionViewCellID forIndexPath:indexPath];
+        return cell;
+        
     }
     else{
         UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
@@ -184,13 +196,24 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
         }else if (indexPath.section == 3){
             MoviePublicCommentsHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:MoviePublicCommentsHeaderViewID forIndexPath:indexPath];
             reusableview = headerView;
+        }else if (indexPath.section == 4){
+            UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header" forIndexPath:indexPath];
+            headerView.backgroundColor = [UIColor gt_colorWithHexString:@"#eaeaea"];
+            reusableview = headerView;
         }
     }
     
     if (kind == UICollectionElementKindSectionFooter) {
-        UICollectionReusableView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer" forIndexPath:indexPath];
-        footerView.backgroundColor = [UIColor gt_colorWithHexString:@"#eaeaea"];
-        reusableview = footerView;
+        if (indexPath.section == 0 || indexPath.section == 1 || indexPath.section == 2) {
+            UICollectionReusableView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer" forIndexPath:indexPath];
+            footerView.backgroundColor = [UIColor gt_colorWithHexString:@"#eaeaea"];
+            reusableview = footerView;
+        }else if (indexPath.section == 3){
+            MoviePublishMoreFooterView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:MoviePublishMoreFooterViewID forIndexPath:indexPath];
+            footerView.commentsCount = 123424;
+            footerView.backgroundColor = [UIColor whiteColor];
+            reusableview = footerView;
+        }
     }
     return reusableview;
 }
@@ -203,13 +226,20 @@ static NSString *const MoviePublishCommentCellID = @"MoviePublishCommentCell";
         return CGSizeMake(kWidth, 40);
     }else if (section == 3){
         return CGSizeMake(kWidth, 40);
+    }else if (section == 4){
+        return CGSizeMake(kWidth, 10);
     }
     return CGSizeZero;
 }
 
-/// header height
+/// footer height
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{
-    return CGSizeMake(kWidth,10);
+      if (section == 0 || section == 1 || section == 2) {
+          return CGSizeMake(kWidth,10);
+      }else if (section == 3){
+           return CGSizeMake(kWidth,30);
+      }
+    return CGSizeMake(0, 0);
 }
 
 
