@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.titleString = @"支付";
+    self.tableView.allowsSelection = NO;
 }
 
 - (IBAction)wechatClick:(UIButton *)sender {

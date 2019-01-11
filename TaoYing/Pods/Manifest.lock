@@ -18,6 +18,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - FSActionSheet (1.0.1)
   - GTCommonKit (0.5.19):
     - ActionSheetPicker-3.0
     - AFNetworking (~> 3.1.0)
@@ -129,6 +130,9 @@ PODS:
     - MJRefresh
     - SDWebImage (~> 4.0.0)
   - IQKeyboardManager (3.3.7)
+  - JCore (1.2.6)
+  - JShare (1.6.0):
+    - JCore (~> 1.2)
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.15.1)
@@ -138,60 +142,48 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - UMCCommon (1.5.3)
-  - UMCSecurityPlugins (1.0.6)
-  - UMCShare/Core (6.9.5):
-    - UMCCommon
-  - UMCShare/Social/ReducedWeChat (6.9.5):
-    - UMCCommon
-    - UMCShare/Core
-  - UMCShare/UI (6.9.5):
-    - UMCCommon
-    - UMCShare/Core
 
 DEPENDENCIES:
+  - FSActionSheet
   - GTCommonKit (~> 0.5.19)
+  - JShare
   - Masonry (~> 1.1.0)
   - MJExtension (~> 3.0.15.1)
   - SDCycleScrollView (~> 1.75)
-  - UMCCommon
-  - UMCSecurityPlugins
-  - UMCShare/Social/ReducedWeChat
-  - UMCShare/UI
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ActionSheetPicker-3.0
     - AFNetworking
     - FMDB
+    - FSActionSheet
     - GTCommonKit
     - IQKeyboardManager
+    - JCore
+    - JShare
     - Masonry
     - MBProgressHUD
     - MJExtension
     - MJRefresh
     - SDCycleScrollView
     - SDWebImage
-    - UMCCommon
-    - UMCSecurityPlugins
-    - UMCShare
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FSActionSheet: 69539289555a515c9cba29a00c91fa3d5d3901aa
   GTCommonKit: 72be8d46e1a378e3b9dedac870f8ba64a9ab76a8
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  JCore: cae516dd2bf1a73b578ce6e1065abd49e709e0f7
+  JShare: 47cf1b3389ff09c333f0599d57be9f7fe1b43073
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  UMCCommon: 016af43c0f769feb1ae1861d65aaf2b23b89c9c7
-  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
-  UMCShare: 552b29753f1b4da87b51d96545ed19e6263df397
 
-PODFILE CHECKSUM: 57a1b9800b29a1c28244eb6df3bcdfaef0ebe475
+PODFILE CHECKSUM: cb0f0c52012d9aeaf589ca723365bd21f7104c96
 
 COCOAPODS: 1.6.0.beta.2

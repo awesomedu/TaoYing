@@ -55,6 +55,16 @@
 		04E1BE1521E4728D0001139C /* HomeRecommendItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE1421E4728D0001139C /* HomeRecommendItem.m */; };
 		04E1BE1821E474180001139C /* RecommendInnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BE1721E474180001139C /* RecommendInnerCell.m */; };
 		04E1BE1A21E47F040001139C /* Recommend.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04E1BE1921E47F040001139C /* Recommend.plist */; };
+		04EDC38F21E84BCE006C4FFE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDC38E21E84BCE006C4FFE /* libz.tbd */; };
+		04EDC39121E84BD9006C4FFE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDC39021E84BD9006C4FFE /* libsqlite3.tbd */; };
+		04EDC39321E84BE3006C4FFE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDC39221E84BE3006C4FFE /* SystemConfiguration.framework */; };
+		04EDC39521E864E8006C4FFE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDC39421E864E8006C4FFE /* CFNetwork.framework */; };
+		04EDC39721E864F0006C4FFE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDC39621E864F0006C4FFE /* CoreFoundation.framework */; };
+		04EDC39921E864FA006C4FFE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDC39821E864FA006C4FFE /* CoreLocation.framework */; };
+		04EDC39B21E86508006C4FFE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDC39A21E86508006C4FFE /* Security.framework */; };
+		04EDC39C21E86511006C4FFE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDC38C21E84BC3006C4FFE /* CoreTelephony.framework */; };
+		04EDC39E21E8651B006C4FFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDC39D21E8651A006C4FFE /* UIKit.framework */; };
+		04EDC39F21E86524006C4FFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C34890121E7B96500F8656D /* CoreGraphics.framework */; };
 		3C3488B121E7586600F8656D /* NSString+ToJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488B021E7586600F8656D /* NSString+ToJson.m */; };
 		3C3488B421E7793100F8656D /* VipRegisterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488B321E7793100F8656D /* VipRegisterTableViewController.m */; };
 		3C3488B721E7823800F8656D /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488B621E7823800F8656D /* BaseTableViewController.m */; };
@@ -65,7 +75,6 @@
 		3C3488C821E79F5900F8656D /* MoviePublishMoreFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488C721E79F5900F8656D /* MoviePublishMoreFooterView.m */; };
 		3C3488CB21E7A49300F8656D /* MoviePublishShareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488CA21E7A49300F8656D /* MoviePublishShareCollectionViewCell.m */; };
 		3C34890021E7B95B00F8656D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3488FF21E7B95B00F8656D /* libsqlite3.0.tbd */; };
-		3C34890221E7B96500F8656D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C34890121E7B96500F8656D /* CoreGraphics.framework */; };
 		3CB0B1DE21E4C3C2009C8E74 /* MovieDevoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0B1DD21E4C3C2009C8E74 /* MovieDevoteCell.m */; };
 		3CB0B1E121E4C80A009C8E74 /* HomeMovieDevoteItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0B1E021E4C80A009C8E74 /* HomeMovieDevoteItem.m */; };
 		3CB0B1E321E4C8D7009C8E74 /* MovieDevote.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CB0B1E221E4C8D7009C8E74 /* MovieDevote.plist */; };
@@ -183,6 +192,15 @@
 		04E1BE1621E474180001139C /* RecommendInnerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendInnerCell.h; sourceTree = "<group>"; };
 		04E1BE1721E474180001139C /* RecommendInnerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendInnerCell.m; sourceTree = "<group>"; };
 		04E1BE1921E47F040001139C /* Recommend.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Recommend.plist; sourceTree = "<group>"; };
+		04EDC38C21E84BC3006C4FFE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		04EDC38E21E84BCE006C4FFE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		04EDC39021E84BD9006C4FFE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		04EDC39221E84BE3006C4FFE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		04EDC39421E864E8006C4FFE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		04EDC39621E864F0006C4FFE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		04EDC39821E864FA006C4FFE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		04EDC39A21E86508006C4FFE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		04EDC39D21E8651A006C4FFE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0542BA8394BD8D5F2BD885B2 /* libPods-TaoYingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaoYingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A1CC08BA7AE9A761378CD5 /* libPods-TaoYingUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaoYingUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EAAE89D7CDB23CA041F3018 /* Pods-TaoYingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoYingUITests.release.xcconfig"; path = "Target Support Files/Pods-TaoYingUITests/Pods-TaoYingUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -223,7 +241,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C34890221E7B96500F8656D /* CoreGraphics.framework in Frameworks */,
+				04EDC39F21E86524006C4FFE /* CoreGraphics.framework in Frameworks */,
+				04EDC39E21E8651B006C4FFE /* UIKit.framework in Frameworks */,
+				04EDC39C21E86511006C4FFE /* CoreTelephony.framework in Frameworks */,
+				04EDC39B21E86508006C4FFE /* Security.framework in Frameworks */,
+				04EDC39921E864FA006C4FFE /* CoreLocation.framework in Frameworks */,
+				04EDC39721E864F0006C4FFE /* CoreFoundation.framework in Frameworks */,
+				04EDC39521E864E8006C4FFE /* CFNetwork.framework in Frameworks */,
+				04EDC39321E84BE3006C4FFE /* SystemConfiguration.framework in Frameworks */,
+				04EDC39121E84BD9006C4FFE /* libsqlite3.tbd in Frameworks */,
+				04EDC38F21E84BCE006C4FFE /* libz.tbd in Frameworks */,
 				3C34890021E7B95B00F8656D /* libsqlite3.0.tbd in Frameworks */,
 				7AF9543875EB7721AAFB1FCA /* libPods-TaoYing.a in Frameworks */,
 			);
@@ -533,6 +560,15 @@
 		2A0A0EA30ADA8A261AB2B0BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04EDC39D21E8651A006C4FFE /* UIKit.framework */,
+				04EDC39A21E86508006C4FFE /* Security.framework */,
+				04EDC39821E864FA006C4FFE /* CoreLocation.framework */,
+				04EDC39621E864F0006C4FFE /* CoreFoundation.framework */,
+				04EDC39421E864E8006C4FFE /* CFNetwork.framework */,
+				04EDC39221E84BE3006C4FFE /* SystemConfiguration.framework */,
+				04EDC39021E84BD9006C4FFE /* libsqlite3.tbd */,
+				04EDC38E21E84BCE006C4FFE /* libz.tbd */,
+				04EDC38C21E84BC3006C4FFE /* CoreTelephony.framework */,
 				3C34890121E7B96500F8656D /* CoreGraphics.framework */,
 				3C3488FF21E7B95B00F8656D /* libsqlite3.0.tbd */,
 				358CE531C9F55161585E1017 /* libPods-TaoYing.a */,
@@ -768,17 +804,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TaoYing/Pods-TaoYing-resources.sh",
+				"${PODS_ROOT}/FSActionSheet/FSActionSheet/FSActionSheet/FSActionSheetResources/FSActionSheet_cancel@2x.png",
+				"${PODS_ROOT}/FSActionSheet/FSActionSheet/FSActionSheet/FSActionSheetResources/FSActionSheet_cancel@3x.png",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/UMCShare/UMShare/UMSocialUI/UMSocialSDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FSActionSheet_cancel@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FSActionSheet_cancel@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1010,9 +1048,9 @@
 			baseConfigurationReference = C4609BBE77FCB5221782525E /* Pods-TaoYing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = LSS297QGC8;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72L74666RB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TaoYing/share/share_ios_6.9.5/UMSocialUI",
@@ -1049,7 +1087,6 @@
 					"-l\"Masonry\"",
 					"-l\"SDCycleScrollView\"",
 					"-l\"SDWebImage\"",
-					"-l\"SocialWeChat\"",
 					"-l\"sqlite3\"",
 					"-l\"z\"",
 					"-framework",
@@ -1067,21 +1104,13 @@
 					"-framework",
 					"\"Security\"",
 					"-framework",
-					"\"SecurityEnvSDK\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
 					"\"UIKit\"",
 					"-framework",
-					"\"UMCommon\"",
-					"-framework",
-					"\"UMShare\"",
-					"-framework",
-					"\"UTDID\"",
+					"\"SystemConfiguration\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bigtang.1050;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigtang.yingxiaoer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "10.501-1";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1092,8 +1121,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72L74666RB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TaoYing/share/share_ios_6.9.5/UMSocialUI",
@@ -1130,7 +1159,6 @@
 					"-l\"Masonry\"",
 					"-l\"SDCycleScrollView\"",
 					"-l\"SDWebImage\"",
-					"-l\"SocialWeChat\"",
 					"-l\"sqlite3\"",
 					"-l\"z\"",
 					"-framework",
@@ -1148,19 +1176,11 @@
 					"-framework",
 					"\"Security\"",
 					"-framework",
-					"\"SecurityEnvSDK\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
 					"\"UIKit\"",
 					"-framework",
-					"\"UMCommon\"",
-					"-framework",
-					"\"UMShare\"",
-					"-framework",
-					"\"UTDID\"",
+					"\"SystemConfiguration\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bigtang.1050;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigtang.yingxiaoer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

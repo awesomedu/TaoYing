@@ -9,9 +9,11 @@
 #import "MoviePublishShareCollectionViewCell.h"
 #import <Masonry.h>
 #import <GTCommonKit.h>
-#import <UMShare/UMShare.h>
 #import "MoviePubliishViewController.h"
 #import <UIImageView+WebCache.h>
+#import <JSHAREService.h>
+#import <FSActionSheet.h>
+#import "MBProgressHUD+GTCommonHud.h"
 
 @interface MoviePublishShareCollectionViewCell()
 @property (nonatomic, strong) UIButton *shareButton;
@@ -64,22 +66,35 @@
 }
 
 - (void)shareClick{
+    NSMutableArray *actionSheetItems = [@[FSActionSheetTitleItemMake(FSActionSheetTypeNormal, @"发送给朋友"),
+                                          FSActionSheetTitleItemMake(FSActionSheetTypeNormal, @"发送到朋友圈"),
+                                          ]mutableCopy];
+    FSActionSheet *actionSheet = [[FSActionSheet alloc] initWithTitle:nil cancelTitle:nil items:actionSheetItems];
+    // 展示并绑定选择回调
+    [actionSheet showWithSelectedCompletion:^(NSInteger selectedIndex) {
+        if (selectedIndex == 0) {
+            [self shareToPlatForm:JSHAREPlatformWechatSession];
+        }
+        if (selectedIndex == 1) {
+            [self shareToPlatForm:JSHAREPlatformWechatTimeLine];
+        }
+    }];
+
+}
+    
+- (void)shareToPlatForm:(JSHAREPlatform)platForm{
     NSLog(@"___%s___",__func__);
-    //创建分享消息对象
-    UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];
-    //创建图片内容对象
-    UMShareImageObject *shareObject = [[UMShareImageObject alloc] init];
-    //如果有缩略图，则设置缩略图
-    shareObject.thumbImage = [UIImage imageNamed:@"icon"];
-    [shareObject setShareImage:@"https://mobile.umeng.com/images/pic/home/social/img-1.png"];
-    //分享消息对象设置分享内容对象
-    messageObject.shareObject = shareObject;
-    //调用分享接口
-    [[UMSocialManager defaultManager] shareToPlatform:UMSocialPlatformType_Line messageObject:messageObject currentViewController:[self parentController] completion:^(id data, NSError *error) {
-        if (error) {
-            NSLog(@"************Share fail with error %@*********",error);
-        }else{
-            NSLog(@"response data is %@",data);
+    JSHAREMessage *message = [JSHAREMessage message];
+    message.text = @"welcome to use yingxiaoer";
+    message.platform = platForm;
+    message.mediaType = JSHAREText;
+    [JSHAREService share:message handler:^(JSHAREState state, NSError *error) {
+        if (state == JSHAREStateSuccess) {
+            [MBProgressHUD showSuccessMessage:@"分享成功"];
+        }else if (state == JSHAREStateFail){
+            [MBProgressHUD showSuccessMessage:@"分享失败"];
+        }else if (state == JSHAREStateCancel){
+            [MBProgressHUD showSuccessMessage:@"分享取消"];
         }
     }];
 }

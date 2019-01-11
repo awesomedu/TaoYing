@@ -8,11 +8,8 @@ target 'TaoYing' do
   pod 'SDCycleScrollView', '~> 1.75'
   pod 'Masonry', '~> 1.1.0'
   pod 'MJExtension', '~> 3.0.15.1'
-  pod 'UMCCommon'
-  pod 'UMCSecurityPlugins'
-  pod 'UMCShare/UI'
-  # 集成微信(精简版0.2M)
-  pod 'UMCShare/Social/ReducedWeChat'
+  pod 'JShare'
+  pod 'FSActionSheet'
 
 
   # Pods for TaoYing

@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.titleString = @"VIP注册";
+    self.tableView.allowsSelection = NO;
 }
 
 
