@@ -11,7 +11,8 @@
 #import <Masonry.h>
 
 @interface MoviePublishMoreFooterView()
-@property (nonatomic, strong) UILabel *commentsCountLabel;
+//@property (nonatomic, strong) UILabel *commentsCountLabel;
+@property (nonatomic, strong) UIButton *commentMoreBtn;
 
 @end
 
@@ -26,23 +27,30 @@
 }
 
 - (void)setUpUI{
-    UILabel *label = [[UILabel alloc] init];
-    label.textColor = [UIColor gt_colorWithHexString:@"#cd349a"];
-    label.font = [UIFont systemFontOfSize:13];
-    self.commentsCountLabel = label;
-    [self addSubview:self.commentsCountLabel];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitleColor:[UIColor gt_colorWithHexString:@"#c3349a"] forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:13];
+    [btn addTarget:self action:@selector(moreClick) forControlEvents:UIControlEventTouchUpInside];
+    self.commentMoreBtn = btn;
+    [self addSubview:self.commentMoreBtn];
+}
+
+- (void)moreClick{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(showMoreData)]) {
+        [self.delegate showMoreData];
+    }
 }
 
 - (void)layoutSubviews{
     [super layoutSubviews];
-    [_commentsCountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+    [_commentMoreBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.mas_equalTo(self);
     }];
 }
 
 - (void)setCommentsCount:(NSInteger)commentsCount{
     _commentsCount = commentsCount;
-    _commentsCountLabel.text = [NSString stringWithFormat:@"查看全部%ld评论",_commentsCount];
+    [_commentMoreBtn setTitle:[NSString stringWithFormat:@"查看全部%ld评论",_commentsCount] forState:UIControlStateNormal];
 }
 
 

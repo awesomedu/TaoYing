@@ -22,9 +22,13 @@
 #import "MoviePublishShareCollectionViewCell.h"
 
 
-@interface MoviePubliishViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,MoviePublishCellDelegate>
+@interface MoviePubliishViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,MoviePublishCellDelegate,LookMoreFooterViewDelegate>
 {
+    /// 头部展开折叠
     BOOL _isClick;
+    /// 评论显示更多
+    BOOL _isShowMore;
+    
 }
 @property (nonatomic, strong) UICollectionView *collectionView;
 /// 影视投资
@@ -119,7 +123,11 @@ static NSString *const MoviePublishShareCollectionViewCellID = @"MoviePublishSha
     }else if (section == 2){
         return 1;
     }else if (section == 3){
-        return _commentItem.count;
+        if (!_isShowMore) { /// 如果没有点击查看更多，显示3条
+            return 3;
+        }else{
+            return _commentItem.count;
+        }
     }
     else{
         return 1;
@@ -210,7 +218,8 @@ static NSString *const MoviePublishShareCollectionViewCellID = @"MoviePublishSha
             reusableview = footerView;
         }else if (indexPath.section == 3){
             MoviePublishMoreFooterView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:MoviePublishMoreFooterViewID forIndexPath:indexPath];
-            footerView.commentsCount = 123424;
+            footerView.commentsCount = _commentItem.count;
+            footerView.delegate = self;
             footerView.backgroundColor = [UIColor whiteColor];
             reusableview = footerView;
         }
@@ -237,7 +246,12 @@ static NSString *const MoviePublishShareCollectionViewCellID = @"MoviePublishSha
       if (section == 0 || section == 1 || section == 2) {
           return CGSizeMake(kWidth,10);
       }else if (section == 3){
-           return CGSizeMake(kWidth,30);
+          if (!_isShowMore) {
+              return CGSizeMake(kWidth,30);
+          }else{
+              return CGSizeZero;
+          }
+          
       }
     return CGSizeMake(0, 0);
 }
@@ -246,6 +260,12 @@ static NSString *const MoviePublishShareCollectionViewCellID = @"MoviePublishSha
 #pragma -mark MoviePublishCellDelegate
 - (void)foldClick:(UIButton *)foldBtn{
     _isClick = foldBtn.isSelected;
+    [self.collectionView reloadData];
+}
+
+#pragma -mark LookMoreFooterViewDelegate
+- (void)showMoreData{
+    _isShowMore = YES;
     [self.collectionView reloadData];
 }
 

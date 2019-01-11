@@ -64,15 +64,6 @@
 		3C3488C521E79A3300F8656D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C3488C421E79A3300F8656D /* Assets.xcassets */; };
 		3C3488C821E79F5900F8656D /* MoviePublishMoreFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488C721E79F5900F8656D /* MoviePublishMoreFooterView.m */; };
 		3C3488CB21E7A49300F8656D /* MoviePublishShareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3488CA21E7A49300F8656D /* MoviePublishShareCollectionViewCell.m */; };
-		3C3488F621E7B7D900F8656D /* UMCommonLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3488E221E7B7D900F8656D /* UMCommonLog.framework */; };
-		3C3488F721E7B7D900F8656D /* UMCommonLog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C3488E321E7B7D900F8656D /* UMCommonLog.bundle */; };
-		3C3488F821E7B7D900F8656D /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3488E621E7B7D900F8656D /* UTDID.framework */; };
-		3C3488F921E7B7D900F8656D /* SecurityEnvSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3488E721E7B7D900F8656D /* SecurityEnvSDK.framework */; };
-		3C3488FA21E7B7D900F8656D /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3488EB21E7B7D900F8656D /* UMCommon.framework */; };
-		3C3488FB21E7B7D900F8656D /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C3488EF21E7B7D900F8656D /* UMSocialSDKResources.bundle */; };
-		3C3488FC21E7B7D900F8656D /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3488F021E7B7D900F8656D /* UShareUI.framework */; };
-		3C3488FD21E7B7D900F8656D /* UMShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3488F121E7B7D900F8656D /* UMShare.framework */; };
-		3C3488FE21E7B7D900F8656D /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3488F421E7B7D900F8656D /* libSocialWeChat.a */; };
 		3C34890021E7B95B00F8656D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3488FF21E7B95B00F8656D /* libsqlite3.0.tbd */; };
 		3C34890221E7B96500F8656D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C34890121E7B96500F8656D /* CoreGraphics.framework */; };
 		3CB0B1DE21E4C3C2009C8E74 /* MovieDevoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0B1DD21E4C3C2009C8E74 /* MovieDevoteCell.m */; };
@@ -214,16 +205,6 @@
 		3C3488C721E79F5900F8656D /* MoviePublishMoreFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePublishMoreFooterView.m; sourceTree = "<group>"; };
 		3C3488C921E7A49300F8656D /* MoviePublishShareCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviePublishShareCollectionViewCell.h; sourceTree = "<group>"; };
 		3C3488CA21E7A49300F8656D /* MoviePublishShareCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePublishShareCollectionViewCell.m; sourceTree = "<group>"; };
-		3C3488E221E7B7D900F8656D /* UMCommonLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommonLog.framework; sourceTree = "<group>"; };
-		3C3488E321E7B7D900F8656D /* UMCommonLog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMCommonLog.bundle; sourceTree = "<group>"; };
-		3C3488E621E7B7D900F8656D /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
-		3C3488E721E7B7D900F8656D /* SecurityEnvSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SecurityEnvSDK.framework; sourceTree = "<group>"; };
-		3C3488EB21E7B7D900F8656D /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
-		3C3488EF21E7B7D900F8656D /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
-		3C3488F021E7B7D900F8656D /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
-		3C3488F121E7B7D900F8656D /* UMShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMShare.framework; sourceTree = "<group>"; };
-		3C3488F421E7B7D900F8656D /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
-		3C3488F521E7B7D900F8656D /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
 		3C3488FF21E7B95B00F8656D /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		3C34890121E7B96500F8656D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3CB0B1DC21E4C3C2009C8E74 /* MovieDevoteCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDevoteCell.h; sourceTree = "<group>"; };
@@ -244,14 +225,7 @@
 			files = (
 				3C34890221E7B96500F8656D /* CoreGraphics.framework in Frameworks */,
 				3C34890021E7B95B00F8656D /* libsqlite3.0.tbd in Frameworks */,
-				3C3488FA21E7B7D900F8656D /* UMCommon.framework in Frameworks */,
-				3C3488F621E7B7D900F8656D /* UMCommonLog.framework in Frameworks */,
-				3C3488FC21E7B7D900F8656D /* UShareUI.framework in Frameworks */,
 				7AF9543875EB7721AAFB1FCA /* libPods-TaoYing.a in Frameworks */,
-				3C3488F821E7B7D900F8656D /* UTDID.framework in Frameworks */,
-				3C3488F921E7B7D900F8656D /* SecurityEnvSDK.framework in Frameworks */,
-				3C3488FE21E7B7D900F8656D /* libSocialWeChat.a in Frameworks */,
-				3C3488FD21E7B7D900F8656D /* UMShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +324,6 @@
 		0491084A21E2E24F002B12A4 /* TaoYing */ = {
 			isa = PBXGroup;
 			children = (
-				3C3488DF21E7B7D900F8656D /* iOS */,
 				04302BF721E71C6200304054 /* UserInfo */,
 				04302BEB21E7116B00304054 /* Categary */,
 				04302BE921E6F6F200304054 /* Others */,
@@ -569,119 +542,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3C3488DF21E7B7D900F8656D /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488E021E7B7D900F8656D /* umcommonlog */,
-				3C3488E421E7B7D900F8656D /* thirdparties */,
-				3C3488E821E7B7D900F8656D /* common */,
-				3C3488EC21E7B7D900F8656D /* share */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		3C3488E021E7B7D900F8656D /* umcommonlog */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488E121E7B7D900F8656D /* umcommonlog_ios_1.0.0 */,
-			);
-			path = umcommonlog;
-			sourceTree = "<group>";
-		};
-		3C3488E121E7B7D900F8656D /* umcommonlog_ios_1.0.0 */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488E221E7B7D900F8656D /* UMCommonLog.framework */,
-				3C3488E321E7B7D900F8656D /* UMCommonLog.bundle */,
-			);
-			path = umcommonlog_ios_1.0.0;
-			sourceTree = "<group>";
-		};
-		3C3488E421E7B7D900F8656D /* thirdparties */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488E521E7B7D900F8656D /* thirdparties_ios_1.0.5 */,
-			);
-			path = thirdparties;
-			sourceTree = "<group>";
-		};
-		3C3488E521E7B7D900F8656D /* thirdparties_ios_1.0.5 */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488E621E7B7D900F8656D /* UTDID.framework */,
-				3C3488E721E7B7D900F8656D /* SecurityEnvSDK.framework */,
-			);
-			path = thirdparties_ios_1.0.5;
-			sourceTree = "<group>";
-		};
-		3C3488E821E7B7D900F8656D /* common */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488E921E7B7D900F8656D /* common_ios_2.0.0 */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		3C3488E921E7B7D900F8656D /* common_ios_2.0.0 */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488EA21E7B7D900F8656D /* normal */,
-			);
-			path = common_ios_2.0.0;
-			sourceTree = "<group>";
-		};
-		3C3488EA21E7B7D900F8656D /* normal */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488EB21E7B7D900F8656D /* UMCommon.framework */,
-			);
-			path = normal;
-			sourceTree = "<group>";
-		};
-		3C3488EC21E7B7D900F8656D /* share */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488ED21E7B7D900F8656D /* share_ios_6.9.5 */,
-			);
-			path = share;
-			sourceTree = "<group>";
-		};
-		3C3488ED21E7B7D900F8656D /* share_ios_6.9.5 */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488EE21E7B7D900F8656D /* UMSocialUI */,
-				3C3488F121E7B7D900F8656D /* UMShare.framework */,
-				3C3488F221E7B7D900F8656D /* SocialLibraries */,
-			);
-			path = share_ios_6.9.5;
-			sourceTree = "<group>";
-		};
-		3C3488EE21E7B7D900F8656D /* UMSocialUI */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488EF21E7B7D900F8656D /* UMSocialSDKResources.bundle */,
-				3C3488F021E7B7D900F8656D /* UShareUI.framework */,
-			);
-			path = UMSocialUI;
-			sourceTree = "<group>";
-		};
-		3C3488F221E7B7D900F8656D /* SocialLibraries */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488F321E7B7D900F8656D /* WeChat */,
-			);
-			path = SocialLibraries;
-			sourceTree = "<group>";
-		};
-		3C3488F321E7B7D900F8656D /* WeChat */ = {
-			isa = PBXGroup;
-			children = (
-				3C3488F421E7B7D900F8656D /* libSocialWeChat.a */,
-				3C3488F521E7B7D900F8656D /* UMSocialWechatHandler.h */,
-			);
-			path = WeChat;
-			sourceTree = "<group>";
-		};
 		58BA940EB8812A277D07C7E5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -805,14 +665,12 @@
 				0439591421E33EA80013DFE0 /* MineContentCell.xib in Resources */,
 				04E1BE0C21E448530001139C /* HomeMovie.plist in Resources */,
 				3C3488C521E79A3300F8656D /* Assets.xcassets in Resources */,
-				3C3488F721E7B7D900F8656D /* UMCommonLog.bundle in Resources */,
 				0491085821E2E250002B12A4 /* LaunchScreen.storyboard in Resources */,
 				04BD514E21E5D37800A6324A /* VideoPhoto.plist in Resources */,
 				3CB0B1E321E4C8D7009C8E74 /* MovieDevote.plist in Resources */,
 				04BD513D21E5BF7700A6324A /* MovieActor.plist in Resources */,
 				0491085321E2E24F002B12A4 /* Main.storyboard in Resources */,
 				04BD513221E5849300A6324A /* Introduce.plist in Resources */,
-				3C3488FB21E7B7D900F8656D /* UMSocialSDKResources.bundle in Resources */,
 				04BD515921E5E67900A6324A /* Comments.plist in Resources */,
 				04E1BE1A21E47F040001139C /* Recommend.plist in Resources */,
 			);
@@ -912,6 +770,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-TaoYing/Pods-TaoYing-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/UMCShare/UMShare/UMSocialUI/UMSocialSDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
@@ -919,6 +778,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1150,7 +1010,8 @@
 			baseConfigurationReference = C4609BBE77FCB5221782525E /* Pods-TaoYing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LSS297QGC8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1218,8 +1079,9 @@
 					"-framework",
 					"\"UTDID\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tang.com.TaoYing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigtang.1050;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "10.501-1";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1229,8 +1091,9 @@
 			baseConfigurationReference = F90764D6553275993A1A2BF9 /* Pods-TaoYing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LSS297QGC8;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TaoYing/share/share_ios_6.9.5/UMSocialUI",
@@ -1297,8 +1160,9 @@
 					"-framework",
 					"\"UTDID\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tang.com.TaoYing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigtang.1050;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

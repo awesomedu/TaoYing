@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LookMoreFooterViewDelegate <NSObject>
+
+- (void)showMoreData;
+
+@end
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MoviePublishMoreFooterView : UICollectionReusableView
-@property (nonatomic, assign)NSInteger commentsCount;
+@property (nonatomic, assign) NSInteger commentsCount;
+@property (nonatomic, assign) id<LookMoreFooterViewDelegate>delegate;
 
 @end
 

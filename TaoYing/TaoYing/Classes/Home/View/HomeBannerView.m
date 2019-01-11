@@ -39,6 +39,11 @@
     if (imageArr.count == 0) {
         return;
     }
+    [imageArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString *url = (NSString *)obj;
+        NSLog(@"url = %@",url);
+        
+    }];
     _cycleScrollView.imageURLStringsGroup = _imageArr;
 }
 

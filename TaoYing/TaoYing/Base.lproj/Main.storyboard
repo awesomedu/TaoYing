@@ -702,7 +702,7 @@
                         <sections>
                             <tableViewSection id="QC5-ak-Q9i">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="145" id="ur5-8P-tMK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="145" id="ur5-8P-tMK">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ur5-8P-tMK" id="PXL-wB-Iue">
@@ -855,10 +855,10 @@
                                                     <rect key="frame" x="225" y="0.0" width="150" height="69"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="Wli-Yu-dn8">
-                                                            <rect key="frame" x="108" y="18.5" width="32" height="32"/>
+                                                            <rect key="frame" x="124" y="26.5" width="16" height="16"/>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-eH-jMh">
-                                                            <rect key="frame" x="50" y="9.5" width="50" height="50"/>
+                                                            <rect key="frame" x="66" y="9.5" width="50" height="50"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="UGC-eH-jMh" secondAttribute="height" multiplier="1:1" id="Dld-Be-I0g"/>
                                                                 <constraint firstAttribute="width" constant="50" id="lPZ-Az-zPh"/>
@@ -1740,7 +1740,7 @@
                                         <rect key="frame" x="0.0" y="608" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f4z-wK-PUN" id="1fL-t1-SXw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="m4n-12-7gw">
@@ -1773,7 +1773,7 @@
                                         <rect key="frame" x="0.0" y="652" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qfs-Uz-XJS" id="SDF-0D-xgw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="13" translatesAutoresizingMaskIntoConstraints="NO" id="fW2-1m-Skj">
@@ -1798,7 +1798,7 @@
                                         <rect key="frame" x="0.0" y="696" width="375" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lVd-CH-Yd8" id="ReB-WR-9bO">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="118.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RB-qC-6SQ">
@@ -2561,34 +2561,34 @@
         <image name="7" width="17" height="17"/>
         <image name="8" width="17" height="17"/>
         <image name="9" width="17" height="17"/>
-        <image name="TAOYING" width="306" height="46.5"/>
-        <image name="alipay" width="17.5" height="17"/>
-        <image name="arrow_right" width="32" height="32"/>
+        <image name="TAOYING" width="306" height="46"/>
+        <image name="alipay" width="17" height="17"/>
+        <image name="arrow_right" width="16" height="16"/>
         <image name="b1" width="53" height="54"/>
         <image name="b2" width="52" height="53"/>
         <image name="b3" width="53" height="54"/>
         <image name="b4" width="52" height="53"/>
         <image name="b5" width="40" height="40"/>
-        <image name="box-1" width="276.5" height="40"/>
-        <image name="box-2" width="276.5" height="40"/>
+        <image name="box-1" width="276" height="40"/>
+        <image name="box-2" width="276" height="40"/>
         <image name="camera" width="200" height="200"/>
         <image name="card" width="230" height="100"/>
         <image name="haibao" width="230" height="353"/>
         <image name="header" width="250" height="177"/>
         <image name="icon-home" width="14" height="15"/>
         <image name="icon-market" width="14" height="15"/>
-        <image name="icon-me" width="12.5" height="14.5"/>
-        <image name="icon-shejiao" width="15.5" height="15.5"/>
+        <image name="icon-me" width="12" height="14"/>
+        <image name="icon-shejiao" width="15" height="15"/>
         <image name="icon-shiping" width="15" height="15"/>
         <image name="img" width="250" height="162"/>
         <image name="loginBack" width="250" height="445"/>
-        <image name="logo" width="113.5" height="114"/>
+        <image name="logo" width="113" height="114"/>
         <image name="nav" width="360" height="64"/>
         <image name="select_border" width="12" height="12"/>
         <image name="select_border_yes" width="12" height="12"/>
         <image name="touxiang" width="70" height="71"/>
         <image name="wechat" width="20" height="20"/>
-        <image name="yes" width="7.5" height="5"/>
+        <image name="yes" width="7" height="5"/>
         <image name="youxiaohuiyuan" width="16" height="16"/>
         <image name="zhijiehuiyuan" width="16" height="16"/>
     </resources>

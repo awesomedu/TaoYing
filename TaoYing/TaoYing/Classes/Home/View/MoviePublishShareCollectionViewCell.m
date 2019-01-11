@@ -11,6 +11,7 @@
 #import <GTCommonKit.h>
 #import <UMShare/UMShare.h>
 #import "MoviePubliishViewController.h"
+#import <UIImageView+WebCache.h>
 
 @interface MoviePublishShareCollectionViewCell()
 @property (nonatomic, strong) UIButton *shareButton;
@@ -40,6 +41,9 @@
     self.shareImageView = [UIImageView new];
     self.shareImageView.image = [UIImage imageNamed:@"touxiang"];
     [self addSubview:self.shareImageView];
+    
+    /// test data
+    [self.shareImageView sd_setImageWithURL:[NSURL URLWithString:@"http://148.70.53.15:8088/banner/18/20181228113138.png"]];
 }
 
 - (void)layoutSubviews{
