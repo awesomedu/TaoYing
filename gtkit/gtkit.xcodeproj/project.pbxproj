@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04EDC3AE21E8871E006C4FFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EDC3AD21E8871E006C4FFE /* AppDelegate.m */; };
+		04EDC3B121E8871E006C4FFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EDC3B021E8871E006C4FFE /* ViewController.m */; };
+		04EDC3B421E8871E006C4FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EDC3B221E8871E006C4FFE /* Main.storyboard */; };
+		04EDC3B621E88720006C4FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EDC3B521E88720006C4FFE /* Assets.xcassets */; };
+		04EDC3B921E88720006C4FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EDC3B721E88720006C4FFE /* LaunchScreen.storyboard */; };
+		04EDC3BC21E88720006C4FFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EDC3BB21E88720006C4FFE /* main.m */; };
+		04EDC3C621E88721006C4FFE /* gtkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EDC3C521E88721006C4FFE /* gtkitTests.m */; };
+		04EDC3D121E88721006C4FFE /* gtkitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EDC3D021E88721006C4FFE /* gtkitUITests.m */; };
+		04EDC3E021E88768006C4FFE /* GTProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EDC3DF21E88768006C4FFE /* GTProgressHud.m */; };
+		04EDC3E321E88C94006C4FFE /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EDC3E221E88C94006C4FFE /* UIView+frame.m */; };
+		3159E2BAE6E270946CFE1016 /* libPods-gtkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55413023EBE1786666DFA3E9 /* libPods-gtkit.a */; };
+		D857B98CA079B280BA3D1543 /* libPods-gtkitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202C2A59A9DF8714840262F0 /* libPods-gtkitUITests.a */; };
+		DDC6C9C191DA22E27450DB5A /* libPods-gtkitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2E15EB7096988B66992440 /* libPods-gtkitTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04EDC3C221E88721006C4FFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04EDC3A121E8871E006C4FFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04EDC3A821E8871E006C4FFE;
+			remoteInfo = gtkit;
+		};
+		04EDC3CD21E88721006C4FFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04EDC3A121E8871E006C4FFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04EDC3A821E8871E006C4FFE;
+			remoteInfo = gtkit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02BCD903A693CF2426CEE848 /* Pods-gtkitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtkitTests.debug.xcconfig"; path = "Target Support Files/Pods-gtkitTests/Pods-gtkitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		04EDC3A921E8871E006C4FFE /* gtkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gtkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EDC3AC21E8871E006C4FFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04EDC3AD21E8871E006C4FFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04EDC3AF21E8871E006C4FFE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04EDC3B021E8871E006C4FFE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04EDC3B321E8871E006C4FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04EDC3B521E88720006C4FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04EDC3B821E88720006C4FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04EDC3BA21E88720006C4FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EDC3BB21E88720006C4FFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04EDC3C121E88721006C4FFE /* gtkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gtkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EDC3C521E88721006C4FFE /* gtkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gtkitTests.m; sourceTree = "<group>"; };
+		04EDC3C721E88721006C4FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EDC3CC21E88721006C4FFE /* gtkitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gtkitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EDC3D021E88721006C4FFE /* gtkitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gtkitUITests.m; sourceTree = "<group>"; };
+		04EDC3D221E88721006C4FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EDC3DE21E88768006C4FFE /* GTProgressHud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTProgressHud.h; sourceTree = "<group>"; };
+		04EDC3DF21E88768006C4FFE /* GTProgressHud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTProgressHud.m; sourceTree = "<group>"; };
+		04EDC3E121E88C94006C4FFE /* UIView+frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		04EDC3E221E88C94006C4FFE /* UIView+frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		202C2A59A9DF8714840262F0 /* libPods-gtkitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtkitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DF87CD4563F19BBD64B95DD /* Pods-gtkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtkit.release.xcconfig"; path = "Target Support Files/Pods-gtkit/Pods-gtkit.release.xcconfig"; sourceTree = "<group>"; };
+		34D0A22F928205DBC8775438 /* Pods-gtkit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtkit.debug.xcconfig"; path = "Target Support Files/Pods-gtkit/Pods-gtkit.debug.xcconfig"; sourceTree = "<group>"; };
+		55413023EBE1786666DFA3E9 /* libPods-gtkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtkit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E2E15EB7096988B66992440 /* libPods-gtkitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtkitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91FF18AC395E06715A7EE3F /* Pods-gtkitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtkitUITests.debug.xcconfig"; path = "Target Support Files/Pods-gtkitUITests/Pods-gtkitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF03B6ED88C8161F38B362AA /* Pods-gtkitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtkitTests.release.xcconfig"; path = "Target Support Files/Pods-gtkitTests/Pods-gtkitTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD3DAF4E183FE2C5BC250BBD /* Pods-gtkitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtkitUITests.release.xcconfig"; path = "Target Support Files/Pods-gtkitUITests/Pods-gtkitUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04EDC3A621E8871E006C4FFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3159E2BAE6E270946CFE1016 /* libPods-gtkit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EDC3BE21E88721006C4FFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC6C9C191DA22E27450DB5A /* libPods-gtkitTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EDC3C921E88721006C4FFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D857B98CA079B280BA3D1543 /* libPods-gtkitUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04EDC3A021E8871E006C4FFE = {
+			isa = PBXGroup;
+			children = (
+				04EDC3AB21E8871E006C4FFE /* gtkit */,
+				04EDC3C421E88721006C4FFE /* gtkitTests */,
+				04EDC3CF21E88721006C4FFE /* gtkitUITests */,
+				04EDC3AA21E8871E006C4FFE /* Products */,
+				61682A382A3D604833871BF2 /* Pods */,
+				0F98D28C8C62865762AC1229 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04EDC3AA21E8871E006C4FFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04EDC3A921E8871E006C4FFE /* gtkit.app */,
+				04EDC3C121E88721006C4FFE /* gtkitTests.xctest */,
+				04EDC3CC21E88721006C4FFE /* gtkitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04EDC3AB21E8871E006C4FFE /* gtkit */ = {
+			isa = PBXGroup;
+			children = (
+				04EDC3AC21E8871E006C4FFE /* AppDelegate.h */,
+				04EDC3AD21E8871E006C4FFE /* AppDelegate.m */,
+				04EDC3AF21E8871E006C4FFE /* ViewController.h */,
+				04EDC3B021E8871E006C4FFE /* ViewController.m */,
+				04EDC3DE21E88768006C4FFE /* GTProgressHud.h */,
+				04EDC3DF21E88768006C4FFE /* GTProgressHud.m */,
+				04EDC3E121E88C94006C4FFE /* UIView+frame.h */,
+				04EDC3E221E88C94006C4FFE /* UIView+frame.m */,
+				04EDC3B221E8871E006C4FFE /* Main.storyboard */,
+				04EDC3B521E88720006C4FFE /* Assets.xcassets */,
+				04EDC3B721E88720006C4FFE /* LaunchScreen.storyboard */,
+				04EDC3BA21E88720006C4FFE /* Info.plist */,
+				04EDC3BB21E88720006C4FFE /* main.m */,
+			);
+			path = gtkit;
+			sourceTree = "<group>";
+		};
+		04EDC3C421E88721006C4FFE /* gtkitTests */ = {
+			isa = PBXGroup;
+			children = (
+				04EDC3C521E88721006C4FFE /* gtkitTests.m */,
+				04EDC3C721E88721006C4FFE /* Info.plist */,
+			);
+			path = gtkitTests;
+			sourceTree = "<group>";
+		};
+		04EDC3CF21E88721006C4FFE /* gtkitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04EDC3D021E88721006C4FFE /* gtkitUITests.m */,
+				04EDC3D221E88721006C4FFE /* Info.plist */,
+			);
+			path = gtkitUITests;
+			sourceTree = "<group>";
+		};
+		0F98D28C8C62865762AC1229 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55413023EBE1786666DFA3E9 /* libPods-gtkit.a */,
+				5E2E15EB7096988B66992440 /* libPods-gtkitTests.a */,
+				202C2A59A9DF8714840262F0 /* libPods-gtkitUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61682A382A3D604833871BF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34D0A22F928205DBC8775438 /* Pods-gtkit.debug.xcconfig */,
+				2DF87CD4563F19BBD64B95DD /* Pods-gtkit.release.xcconfig */,
+				02BCD903A693CF2426CEE848 /* Pods-gtkitTests.debug.xcconfig */,
+				EF03B6ED88C8161F38B362AA /* Pods-gtkitTests.release.xcconfig */,
+				B91FF18AC395E06715A7EE3F /* Pods-gtkitUITests.debug.xcconfig */,
+				FD3DAF4E183FE2C5BC250BBD /* Pods-gtkitUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04EDC3A821E8871E006C4FFE /* gtkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EDC3D521E88721006C4FFE /* Build configuration list for PBXNativeTarget "gtkit" */;
+			buildPhases = (
+				105BE8CDD036B94D3B63E7A0 /* [CP] Check Pods Manifest.lock */,
+				04EDC3A521E8871E006C4FFE /* Sources */,
+				04EDC3A621E8871E006C4FFE /* Frameworks */,
+				04EDC3A721E8871E006C4FFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gtkit;
+			productName = gtkit;
+			productReference = 04EDC3A921E8871E006C4FFE /* gtkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04EDC3C021E88721006C4FFE /* gtkitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EDC3D821E88721006C4FFE /* Build configuration list for PBXNativeTarget "gtkitTests" */;
+			buildPhases = (
+				54C9C7EB1644E25BBBFB4E34 /* [CP] Check Pods Manifest.lock */,
+				04EDC3BD21E88721006C4FFE /* Sources */,
+				04EDC3BE21E88721006C4FFE /* Frameworks */,
+				04EDC3BF21E88721006C4FFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04EDC3C321E88721006C4FFE /* PBXTargetDependency */,
+			);
+			name = gtkitTests;
+			productName = gtkitTests;
+			productReference = 04EDC3C121E88721006C4FFE /* gtkitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04EDC3CB21E88721006C4FFE /* gtkitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EDC3DB21E88721006C4FFE /* Build configuration list for PBXNativeTarget "gtkitUITests" */;
+			buildPhases = (
+				9EBC858DF35ADCD909156CDF /* [CP] Check Pods Manifest.lock */,
+				04EDC3C821E88721006C4FFE /* Sources */,
+				04EDC3C921E88721006C4FFE /* Frameworks */,
+				04EDC3CA21E88721006C4FFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04EDC3CE21E88721006C4FFE /* PBXTargetDependency */,
+			);
+			name = gtkitUITests;
+			productName = gtkitUITests;
+			productReference = 04EDC3CC21E88721006C4FFE /* gtkitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04EDC3A121E8871E006C4FFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					04EDC3A821E8871E006C4FFE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					04EDC3C021E88721006C4FFE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 04EDC3A821E8871E006C4FFE;
+					};
+					04EDC3CB21E88721006C4FFE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 04EDC3A821E8871E006C4FFE;
+					};
+				};
+			};
+			buildConfigurationList = 04EDC3A421E8871E006C4FFE /* Build configuration list for PBXProject "gtkit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04EDC3A021E8871E006C4FFE;
+			productRefGroup = 04EDC3AA21E8871E006C4FFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04EDC3A821E8871E006C4FFE /* gtkit */,
+				04EDC3C021E88721006C4FFE /* gtkitTests */,
+				04EDC3CB21E88721006C4FFE /* gtkitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04EDC3A721E8871E006C4FFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EDC3B921E88720006C4FFE /* LaunchScreen.storyboard in Resources */,
+				04EDC3B621E88720006C4FFE /* Assets.xcassets in Resources */,
+				04EDC3B421E8871E006C4FFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EDC3BF21E88721006C4FFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EDC3CA21E88721006C4FFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		105BE8CDD036B94D3B63E7A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gtkit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54C9C7EB1644E25BBBFB4E34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gtkitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EBC858DF35ADCD909156CDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gtkitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04EDC3A521E8871E006C4FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EDC3B121E8871E006C4FFE /* ViewController.m in Sources */,
+				04EDC3BC21E88720006C4FFE /* main.m in Sources */,
+				04EDC3AE21E8871E006C4FFE /* AppDelegate.m in Sources */,
+				04EDC3E321E88C94006C4FFE /* UIView+frame.m in Sources */,
+				04EDC3E021E88768006C4FFE /* GTProgressHud.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EDC3BD21E88721006C4FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EDC3C621E88721006C4FFE /* gtkitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EDC3C821E88721006C4FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EDC3D121E88721006C4FFE /* gtkitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04EDC3C321E88721006C4FFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04EDC3A821E8871E006C4FFE /* gtkit */;
+			targetProxy = 04EDC3C221E88721006C4FFE /* PBXContainerItemProxy */;
+		};
+		04EDC3CE21E88721006C4FFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04EDC3A821E8871E006C4FFE /* gtkit */;
+			targetProxy = 04EDC3CD21E88721006C4FFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04EDC3B221E8871E006C4FFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EDC3B321E8871E006C4FFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04EDC3B721E88720006C4FFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EDC3B821E88720006C4FFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04EDC3D321E88721006C4FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04EDC3D421E88721006C4FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04EDC3D621E88721006C4FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D0A22F928205DBC8775438 /* Pods-gtkit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = gtkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tang.com.gtkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04EDC3D721E88721006C4FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF87CD4563F19BBD64B95DD /* Pods-gtkit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = gtkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tang.com.gtkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04EDC3D921E88721006C4FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02BCD903A693CF2426CEE848 /* Pods-gtkitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = gtkitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tang.com.gtkitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gtkit.app/gtkit";
+			};
+			name = Debug;
+		};
+		04EDC3DA21E88721006C4FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF03B6ED88C8161F38B362AA /* Pods-gtkitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = gtkitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tang.com.gtkitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gtkit.app/gtkit";
+			};
+			name = Release;
+		};
+		04EDC3DC21E88721006C4FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B91FF18AC395E06715A7EE3F /* Pods-gtkitUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = gtkitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tang.com.gtkitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gtkit;
+			};
+			name = Debug;
+		};
+		04EDC3DD21E88721006C4FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3DAF4E183FE2C5BC250BBD /* Pods-gtkitUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = gtkitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tang.com.gtkitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gtkit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04EDC3A421E8871E006C4FFE /* Build configuration list for PBXProject "gtkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EDC3D321E88721006C4FFE /* Debug */,
+				04EDC3D421E88721006C4FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EDC3D521E88721006C4FFE /* Build configuration list for PBXNativeTarget "gtkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EDC3D621E88721006C4FFE /* Debug */,
+				04EDC3D721E88721006C4FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EDC3D821E88721006C4FFE /* Build configuration list for PBXNativeTarget "gtkitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EDC3D921E88721006C4FFE /* Debug */,
+				04EDC3DA21E88721006C4FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EDC3DB21E88721006C4FFE /* Build configuration list for PBXNativeTarget "gtkitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EDC3DC21E88721006C4FFE /* Debug */,
+				04EDC3DD21E88721006C4FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04EDC3A121E8871E006C4FFE /* Project object */;
+}
